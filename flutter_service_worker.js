@@ -8,7 +8,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "64fa66cc224a10a02d04c885fe669b4c
 "assets/assets/app_store.webp": "c35ec6a9856aba31e3091af775a78d4e",
 "assets/assets/call.png": "d391ee9fb09d836582213bc844ca244e",
 "assets/assets/devine_care.webp": "2c09e53706d054c031c76632016d2ea9",
-"assets/assets/evv.webp": "dbd67e27fbaf5cb154492444269101bb",
+"assets/assets/evv.webp": "40697cbd8b4146a3e0413d4e0618fdca",
 "assets/assets/github.png": "69b7e397e348747e802b90e5eb0bfbd4",
 "assets/assets/kosher.webp": "aa6da4ce091affd82a5a04d5f3982b35",
 "assets/assets/linkdin.png": "66a826de2c08e61c830bf126c3af02aa",
@@ -37,9 +37,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "64fa66cc224a10a02d04c885fe669b4c
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "ffd12c1bf74da9fbf24aee01ff270568",
-"/": "ffd12c1bf74da9fbf24aee01ff270568",
-"main.dart.js": "3f3448e04bb8dbb99d1f067e86bc4185",
+"index.html": "49f3b7e4dc8904ae36cd68f66b9ef849",
+"/": "49f3b7e4dc8904ae36cd68f66b9ef849",
+"main.dart.js": "48b9cda48ad18e27ae5ffab874d7ec63",
 "manifest.json": "e74af8957b5899dc6da961caee768ec9",
 "version.json": "009c9e65172e010890f7f65fde438006"};
 // The application shell files that are downloaded before a service worker can
