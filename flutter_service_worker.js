@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "ad497a426617671f3fc4e0462cef8f90",
-"assets/AssetManifest.json": "dad4d503c62a5f97efb93a8c75f3a20b",
+const RESOURCES = {"assets/AssetManifest.bin": "ef52b0b2bddad4b995f4c1ae20a108e9",
+"assets/AssetManifest.json": "41d1037c4773d7ddc7a2aba266a7686a",
 "assets/assets/app_store.webp": "c35ec6a9856aba31e3091af775a78d4e",
 "assets/assets/call.webp": "d3a1acd9ddb2cea9ce4c27c9918477ae",
 "assets/assets/cv.webp": "ddc313d0ac57a6b0d6ec425294af0f8e",
@@ -16,6 +16,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "ad497a426617671f3fc4e0462cef8f90
 "assets/assets/linkdin.webp": "12f29775335c36fa09cb61976cd10c14",
 "assets/assets/play_store.webp": "4779a8a5d92190b52a4c0cab4461fad0",
 "assets/assets/profile.png": "e8e2e94528fccff19303ee2261afb77f",
+"assets/assets/sound_surprise_cam.webp": "f01bd026968e19e440f35b43020cf182",
 "assets/assets/syed_zameen.webp": "699ba0b103abe2d89bec393c37af648e",
 "assets/assets/tour_guide.webp": "328c65bb22f0f3ed7ab4d9bc53a1723a",
 "assets/assets/video_to_mp3.webp": "39951e6013769e2c6fc309a4da829514",
@@ -39,9 +40,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "ad497a426617671f3fc4e0462cef8f90
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "b12dd2892268c2117a02e112d688262b",
-"/": "b12dd2892268c2117a02e112d688262b",
-"main.dart.js": "6302a87a7558734ac0a327d3bd53735d",
+"index.html": "20add169b390592f41db21d95ccbcf1a",
+"/": "20add169b390592f41db21d95ccbcf1a",
+"main.dart.js": "e39c326725dea6d5c669f93fa4f8d949",
 "manifest.json": "e74af8957b5899dc6da961caee768ec9",
 "version.json": "009c9e65172e010890f7f65fde438006"};
 // The application shell files that are downloaded before a service worker can
