@@ -1,0 +1,27 @@
+.profile-shadow {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-shadow img {
+  width: 650px;
+  display: block;
+  z-index: 2;
+}
+
+.profile-shadow::after {
+  z-index: 3;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(
+    to bottom,
+    rgba(1, 10, 16, 0) 0%,
+    /* transparent */ rgba(1, 10, 16, 0.6) 70%,
+    /* mid-fade */ rgba(1, 10, 16, 1) 100% /* solid #010a10 */
+  );
+  pointer-events: none;
+}
