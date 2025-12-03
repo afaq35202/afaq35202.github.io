@@ -4,7 +4,6 @@
 }
 
 .profile-shadow img {
-  width: 650px;
   display: block;
   z-index: 2;
 }
@@ -25,3 +24,24 @@
   );
   pointer-events: none;
 }
+
+.margin-lg-only {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .margin-lg-only {
+    margin: 0 85px;
+  }
+}
+
+.custom-margin-lg {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .custom-margin-lg {
+    margin: 0 130px;
+  }
+}
+

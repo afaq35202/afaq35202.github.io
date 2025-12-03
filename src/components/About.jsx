@@ -68,7 +68,7 @@ const About = ({ myAboutRef }) => {
                   <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6 ">
                     <a
                       class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon"
-                      href="https://inversweb.com/product/html/virtuo/index.html#"
+                      href=""
                     >
                       <div class="icon-reverse-wrapper">
                         <span class="btn-text">Read More About Me</span>

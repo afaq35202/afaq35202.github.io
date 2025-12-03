@@ -1,9 +1,12 @@
+import React from "react";
 const Nav = ({
   onServicesClick,
   onAboutClick,
   onSkillClick,
   onProjectsClick,
 }) => {
+  const [showSideNav, setShowSideNav] = React.useState(false);
+  console.log("showSideNav", showSideNav);
   return (
     <>
       <header class="tmp-header-area-start header-one header--sticky header--transparent sticky">
@@ -101,7 +104,12 @@ const Nav = ({
                   </div>
 
                   <div class="tmp-side-collups-area d-block d-xl-none">
-                    <button class="hamberger-menu humberger_menu_active">
+                    <button
+                      onClick={() => {
+                        setShowSideNav(!showSideNav);
+                      }}
+                      class="hamberger-menu humberger_menu_active"
+                    >
                       <i
                         id="menuBtn"
                         class="fa-solid fa-bars humberger-menu"
@@ -114,12 +122,12 @@ const Nav = ({
           </div>
         </div>
       </header>
-      <div class="d-block d-xl-block">
-        <div class="tmp-popup-mobile-menu">
-          <div class="inner">
+      <div class={`${showSideNav ? "d-block d-xl-block sidenav" : "d-none"}`}>
+        <div class={`${showSideNav ? "tmp-side-nav-active" : ""}`}>
+          <div class="sidenav-inner">
             <div class="header-top">
               <div class="logo">
-                <a href="/" class="logo-area">
+                {/* <a href="/" class="logo-area">
                   <img
                     class="logo-dark"
                     src="./assets/white-logo-reeni.png"
@@ -130,7 +138,7 @@ const Nav = ({
                     src="./assets/white-logo-reeni.png"
                     alt="logo"
                   />
-                </a>
+                </a> */}
               </div>
               <div class="close-menu">
                 <button class="close-button tmp-round-action-btn">

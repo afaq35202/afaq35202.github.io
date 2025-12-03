@@ -9,12 +9,7 @@ const Skkills = ({ mySkillRef }) => {
       class="my-skill-area-style-two plr--120 plr_lg--30 plr_md--30 plr_sm--30 plr_mobile--15 mt--10"
       id="resume"
     >
-      <div
-        style={{
-          margin: "0 130px",
-        }}
-        class=" tpm-custom-box-bg position-relative overflow-hidden border--radious-20"
-      >
+      <div class="tpm-custom-box-bg position-relative overflow-hidden border--radious-20 custom-margin-lg">
         <div class="container">
           <div class="row">
             <div class="col-xxl-6 col-lg-12 col-md-12">

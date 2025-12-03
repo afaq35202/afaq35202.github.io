@@ -1,12 +1,13 @@
 import React, { useRef } from "react";
 
-import Nav from "../components/Nav";
+import Nav from "../components/nav";
 import Services from "../components/Services";
 import Intro from "../components/Intro";
 import About from "../components/About";
 import Counter from "../components/Counter";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 const HomePage = () => {
   const myServicesRef = useRef(null);
   const myAboutRef = useRef(null);
@@ -31,6 +32,7 @@ const HomePage = () => {
       <Counter />
       <Skills mySkillRef={mySkillRef} />
       <Projects myProjectsRef={myProjectsRef} />
+      <Footer />
     </div>
   );
 };
