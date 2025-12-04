@@ -5,50 +5,30 @@ const Footer = () => {
         <div class="row margin-lg-only">
           <div class="col-lg-12">
             <div class="for-animation-inner">
-              <div class="cta__line-wrap-1">
-                <img
-                  src="./assets/6732fb6df497a3fa7a857752_Vector 7.svg"
-                  loading="lazy"
-                  alt=""
-                  height="118"
-                  class="cta__line-1"
-                  style={{
-                    translate: "none",
-                    rotate: "none",
-                    scale: "none",
-                    opacity: 1,
-                    transform: "translate3d(270.18px, 0px, 0px)",
-                  }}
-                />
-              </div>
-              <div class="cta__line-wrap-2">
-                <img
-                  class="cta__line-2"
-                  src="./assets/6732fb6df497a3fa7a857752_Vector 7.svg"
-                  loading="lazy"
-                  alt=""
-                  height="118"
-                  style={{
-                    translate: "none",
-                    rotate: "none",
-                    scale: "none",
-                    opacity: 1,
-                    transform: "translate3d(-270.18px, 0px, 0px)",
-                  }}
-                />
-              </div>
               <div class="footer-area text-center">
-                <div class="logo">
-                  <a href="">
-                    <img src="./assets/white-logo-reeni.png" alt="" />
+                <h3 class="footer-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                  Let's Get in Touch!
+                </h3>
+                <p class="description tmp-scroll-trigger tmp-fade-in animation-order-2">
+                  I love meeting new people from around the world! Hit me up to
+                  talk about project ideas, Programming, Movies, Neuroscience,
+                  Linux, Kittens and Puppies, Travelling, Books, or Weather. Or
+                  just say "Hi" and we'll find something we enjoy talking about.
+                  You can find me through any of the platforms listed in the
+                  top-right navigation, or via email at{" "}
+                  <a href="mailto:afaqawan887@gmail.com">
+                    afaqawan887@gmail.com
                   </a>
-                </div>
+                  .
+                </p>
+
                 <p class="description mt--30">
-                  ©<script>document.write(new Date().getFullYear());</script>
-                  2025 . All rights reserved by
+                  ©<script>document.write(new Date().getFullYear());</script>{" "}
+                  2025. All rights reserved by
                   <a target="_blank" href="">
-                    &nbsp; InversWeb.
+                    InversWeb
                   </a>
+                  .
                 </p>
               </div>
             </div>

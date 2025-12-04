@@ -23132,6 +23132,7 @@ body.loaded {
   }
 }
 .my-skill-card-style-two .my-skill-card .card-title {
+  text-align: left;
   color: var(--color-heading);
   font-family: var(--font-primary);
   font-size: 24px;

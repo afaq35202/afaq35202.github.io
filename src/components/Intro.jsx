@@ -44,7 +44,7 @@ const About = () => {
             <div class="banner-main-demo-inner-content">
               <span class="top-intro">
                 <img src={hiImg} alt="shape" />
-                &nbsp;My name is Afaq Awan a freelancer
+                &nbsp;My name is Afaq Awan 👨‍💻 a freelancer
               </span>
               <div className="profile-shadow">
                 <img
@@ -57,8 +57,6 @@ const About = () => {
               <div class="absolute-designation shape-image">
                 <h2
                   class="up shape"
-                  data-speed="0.03"
-                  data-revert="true"
                   style={{
                     translate: "none",
                     rotate: "none",
@@ -69,10 +67,23 @@ const About = () => {
                 >
                   &amp; Flutter Dev
                 </h2>
-                <h2
+                <p class="top-intro">
+                  Experienced Mobile App Developer with a solid track record of
+                  creating cutting-edge, high- performance applications for
+                  Android and IOS platforms. Over three years of hands-on
+                  expertise in developing robust, user-friendly mobile solutions
+                  using native Java, Kotlin, and hybrid Flutter. Proven ability
+                  to deliver scalable and visually appealing applications, while
+                  consistently meeting project deadlines. Adept at collaborating
+                  with cross-functional teams and staying up-to-date with
+                  emerging technologies to drive innovation and optimize user
+                  experiences.
+                </p>
+                {/* <h2
                   class="down shape"
                   data-speed="0.02"
                   style={{
+                    zIndex: 1,
                     translate: "none",
                     rotate: "none",
                     scale: "none",
@@ -80,7 +91,7 @@ const About = () => {
                   }}
                 >
                   Photographer
-                </h2>
+                </h2> */}
               </div>
             </div>
           </div>

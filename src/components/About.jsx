@@ -14,15 +14,15 @@ const About = ({ myAboutRef }) => {
         <section class="about-us-area">
           <div class="container">
             <div class="row align-items-center animation-action-3">
-              <div class="col-lg-6 pr--50 pr_lg--10 pr_md--10 pr_sm--10">
+              {/* <div class="col-lg-6 pr--50 pr_lg--10 pr_md--10 pr_sm--10">
                 <div class="about-us-left-content-wrap paralax-image">
                   <div class="about-thumbnail-large-style-two about-us-card tmponhover single-animation active">
                     <img src={reeniMainDemo} alt="about" />
                     <div class="tmp-light light-center"></div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6">
+              </div> */}
+              <div class="col-lg-12">
                 <div class="about-us-right-content-wrap">
                   <div class="section-head text-align-left mb--50">
                     <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
@@ -30,12 +30,18 @@ const About = ({ myAboutRef }) => {
                     </div>
                     <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
                       Boost Business Strategic <br />
-                      Solutions with Us
+                      with Mobile Solutions
                     </h2>
                     <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">
-                      Business consulting consultants provide expert advice and
-                      guida businesses to help them improve their performance,
-                      efficiency, and organizational
+                      I’m a dedicated mobile application developer specializing
+                      in Android, iOS, and cross-platform solutions. With
+                      hands-on experience in Flutter, Jetpack Compose,
+                      REST/GraphQL APIs, Firebase, real-time communication,
+                      video streaming, and secure payment integrations, I build
+                      applications that are fast, scalable, and user-centric. I
+                      focus on writing clean code, delivering smooth
+                      performance, and turning ideas into meaningful digital
+                      products.
                     </p>
                   </div>
                   <div class="about-us-section-card row g-5">
@@ -45,9 +51,11 @@ const About = ({ myAboutRef }) => {
                           <div class="logo-img">
                             <img src={BusinessImg} alt="logo" />
                           </div>
-                          <h3 class="card-title">Business</h3>
+                          <h3 class="card-title">Mobile Development</h3>
                         </div>
-                        <p class="card-para">Each one showcases my approach</p>
+                        <p class="card-para">
+                          Native Android, iOS & Flutter expertise.
+                        </p>
                       </div>
                     </div>
 
@@ -57,10 +65,10 @@ const About = ({ myAboutRef }) => {
                           <div class="logo-img">
                             <img src={PartnerImg} alt="logo" />
                           </div>
-                          <h3 class="card-title">Partners</h3>
+                          <h3 class="card-title">Real-Time Solutions</h3>
                         </div>
                         <p class="card-para">
-                          Business consulting consul us to a provide
+                          Video, voice, chat, and live streaming features.
                         </p>
                       </div>
                     </div>

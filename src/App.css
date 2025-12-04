@@ -45,3 +45,8 @@
   }
 }
 
+.store-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
