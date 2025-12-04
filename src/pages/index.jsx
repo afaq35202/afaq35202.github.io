@@ -16,7 +16,7 @@ const HomePage = () => {
   const scrollToSection = (sectionRef) => {
     sectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
-
+  
   return (
     <div>
       <Nav
