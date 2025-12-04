@@ -56,6 +56,7 @@ const Nav = ({
                       </li>
                       <li class="nav-item">
                         <a
+                          target="_blank"
                           class="smoth-animation"
                           href="https://drive.google.com/file/d/1G-tsUYkJeDgJ_j9vui49RkPaurKkE-Sx/view"
                         >
@@ -123,25 +124,20 @@ const Nav = ({
         </div>
       </header>
       <div class={`${showSideNav ? "d-block d-xl-block sidenav" : "d-none"}`}>
-        <div class={`${showSideNav ? "tmp-side-nav-active" : ""}`}>
-          <div class="sidenav-inner">
+        <div
+          class={`${
+            showSideNav ? " tmp-side-nav-active" : "tmp-popup-mobile-menu"
+          }`}
+        >
+          <div class="inner">
             <div class="header-top">
-              <div class="logo">
-                {/* <a href="/" class="logo-area">
-                  <img
-                    class="logo-dark"
-                    src="./assets/white-logo-reeni.png"
-                    alt="logo"
-                  />
-                  <img
-                    class="logo-white"
-                    src="./assets/white-logo-reeni.png"
-                    alt="logo"
-                  />
-                </a> */}
-              </div>
               <div class="close-menu">
-                <button class="close-button tmp-round-action-btn">
+                <button
+                  onClick={() => {
+                    setShowSideNav(false);
+                  }}
+                  class="close-button tmp-round-action-btn"
+                >
                   <i class="fa-sharp fa-solid fa-xmark"></i>
                 </button>
               </div>
@@ -149,14 +145,17 @@ const Nav = ({
 
             <ul class="tmp-mainmenu onepagenav-click">
               <li>
-                <a class="smoth-animation" href="#home">
-                  Home
+                <a class="smoth-animation" href="/">
+                  Portfolio
                 </a>
               </li>
               <li>
                 <a
                   class="smoth-animation"
-                  href="https://inversweb.com/product/html/virtuo/index.html#service"
+                  onClick={() => {
+                    setShowSideNav(false);
+                    onServicesClick && onServicesClick();
+                  }}
                 >
                   Services
                 </a>
@@ -164,60 +163,88 @@ const Nav = ({
               <li>
                 <a
                   class="smoth-animation"
-                  href="https://inversweb.com/product/html/virtuo/index.html#portfolio"
+                  onClick={() => {
+                    setShowSideNav(false);
+                    onAboutClick && onAboutClick();
+                  }}
                 >
-                  Portfolio
+                  About
                 </a>
               </li>
               <li>
                 <a
                   class="smoth-animation"
-                  href="https://inversweb.com/product/html/virtuo/index.html#resume"
+                  onClick={() => {
+                    setShowSideNav(false);
+                    onSkillClick && onSkillClick();
+                  }}
+                >
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
+                  class="smoth-animation"
+                  onClick={() => {
+                    setShowSideNav(false);
+                    onProjectsClick && onProjectsClick();
+                  }}
+                >
+                  Projects
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="smoth-animation"
+                  href="https://drive.google.com/file/d/1G-tsUYkJeDgJ_j9vui49RkPaurKkE-Sx/view"
+                  target="_blank"
                 >
                   Resume
                 </a>
               </li>
-              <li>
-                <a
-                  class="smoth-animation"
-                  href="https://inversweb.com/product/html/virtuo/index.html#pricing"
-                >
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a
-                  class="smoth-animation"
-                  href="https://inversweb.com/product/html/virtuo/index.html#blog"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  class="smoth-animation"
-                  href="https://inversweb.com/product/html/virtuo/index.html#contacts"
-                >
-                  Contact
-                </a>
-              </li>
             </ul>
 
-            <div class="social-wrapper mt--40">
+            <div class="social-wrapper mt--20 mb--10 pl--20">
               <span class="subtitle">find with me</span>
-              <div class="social-link">
-                <a href="https://inversweb.com/product/html/virtuo/index.html#">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://inversweb.com/product/html/virtuo/index.html#">
+
+              <div
+                style={{
+                  justifyContent: "center",
+                }}
+                class="social-link"
+              >
+                <a href="https://linkedin.com/in/afaq-awan-162b10215">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://inversweb.com/product/html/virtuo/index.html#">
-                  <i class="fa-brands fa-twitter"></i>
+                <a href="https://github.com/afaq35202">
+                  <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://inversweb.com/product/html/virtuo/index.html#">
-                  <i class="fa-brands fa-facebook-f"></i>
+                <a
+                  href="https://wa.me/923224022942"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
                 </a>
+
+                <a
+                  href="mailto:afaqawan35202@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                </a>
+                {/* <a href="https://inversweb.com/product/html/virtuo/index.html#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                      <a href="https://inversweb.com/product/html/virtuo/index.html#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a> */}
+
+                {/* <a href="https://inversweb.com/product/html/virtuo/index.html#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a> */}
               </div>
             </div>
           </div>

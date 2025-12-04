@@ -198,60 +198,7 @@ TourGuide helps travelers plan, book, explore, and connect — making every trip
               tabindex="0"
             >
               <div class="row animation-action-3">
-                {/* <div class="col-lg-6 col-md-6 paralax-image">
-                  <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-1     tmp-control">
-                    <div class="portfoli-card-img">
-                      <div class="img-box v2">
-                        <a class="tmp-scroll-trigger">
-                          <img
-                            class="w-100"
-                            src={PortfoliImg2}
-                            alt="Thumbnail"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="portfolio-card-content-wrap">
-                      <div class="content-left">
-                        <h3 class="portfolio-card-title">
-                          <a>SAAS website design</a>
-                        </h3>
-                        <div class="tag-items">
-                          <ul>
-                            <li>
-                              <a href="" class="tag-item">
-                                JavaScript
-                              </a>
-                            </li>
-                            <li>
-                              <a href="" class="tag-item">
-                                Figma
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <a
-                        class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon btn-md"
-                        href=""
-                      >
-                        <div class="icon-reverse-wrapper">
-                          <span class="btn-text">View Details</span>
-                          <div class="btn-hack"></div>
-                          <img src={Btg} alt="" class="btn-bg" />
-                          <img src={Btg2} alt="" class="btn-bg-hover" />
-                          <span class="btn-icon">
-                            <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                          </span>
-                          <span class="btn-icon">
-                            <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="tmp-light light-center"></div>
-                  </div>
-                </div> */}
+               
                 {projectsData.map((project) => (
                   <div class="col-lg-6 col-md-6 paralax-image">
                     <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-2    ">

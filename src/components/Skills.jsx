@@ -1,33 +1,29 @@
-import SkillIcon1 from "../assets/icon-01.png";
-import SkillIcon2 from "../assets/icon-02.png";
-import SkillIcon3 from "../assets/icon-03.png";
-import SkillIcon4 from "../assets/icon-04.png";
 const Skkills = ({ mySkillRef }) => {
   const skillsData = [
     {
       id: 1,
-      icon: SkillIcon1, // replace with your icon
+      icon: "fa-mobile-screen-button",
       title: "Mobile Development",
       description:
         "Flutter, Dart, Java, Kotlin, XML, and Jetpack Compose for building fast and scalable mobile applications.",
     },
     {
       id: 2,
-      icon: SkillIcon2,
+      icon: "fa-code",
       title: "Programming Skills",
       description:
         "Strong foundation in C++, PHP, SQL, HTML, and CSS with hands-on experience in backend and frontend development.",
     },
     {
       id: 3,
-      icon: SkillIcon3,
+      icon: "fa-tools",
       title: "Tools & Platforms",
       description:
         "Experienced with Firebase, REST APIs, MS Office, version control, and development tools for smooth workflows.",
     },
     {
       id: 4,
-      icon: SkillIcon4,
+      icon: "fa-lightbulb",
       title: "Soft Skills",
       description:
         "Excellent communication, teamwork, and problem-solving abilities for delivering quality and collaboration.",
@@ -60,6 +56,15 @@ const Skkills = ({ mySkillRef }) => {
                     essential tools that help me deliver reliable, scalable, and
                     high-quality mobile solutions.
                   </p>
+                  <br />
+                  <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">
+                    I am passionate about adopting emerging technologies and
+                    best practices to optimize performance and enhance user
+                    experiences. With strong problem-solving abilities and
+                    effective collaboration skills, I create innovative
+                    solutions that consistently meet project goals and client
+                    expectations.
+                  </p>
                 </div>
               </div>
             </div>
@@ -77,7 +82,11 @@ const Skkills = ({ mySkillRef }) => {
                       }`}
                     >
                       <div className="card-icon">
-                        <img src={skill.icon} alt={skill.title} />
+                        {typeof skill.icon === "string" ? (
+                          <i className={`fa-solid ${skill.icon}`}></i>
+                        ) : (
+                          <img src={skill.icon} alt={skill.title} />
+                        )}
                       </div>
                       <h3 className="card-title">{skill.title}</h3>
                       <p className="card-para">{skill.description}</p>

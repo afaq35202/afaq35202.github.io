@@ -24,11 +24,7 @@ const Footer = () => {
 
                 <p class="description mt--30">
                   ©<script>document.write(new Date().getFullYear());</script>{" "}
-                  2025. All rights reserved by
-                  <a target="_blank" href="">
-                    InversWeb
-                  </a>
-                  .
+                  2025. All rights reserved .
                 </p>
               </div>
             </div>
