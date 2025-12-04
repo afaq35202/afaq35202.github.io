@@ -1,4 +1,3 @@
-import logo from "../assets/white-logo-reeni.png";
 import LightShade from "../assets/light.svg";
 import hiImg from "../assets/hi.png";
 import one from "../assets/01.svg";
