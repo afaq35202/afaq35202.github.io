@@ -1,8 +1,5 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "./assets/swiper.css";
 import "./App.css";
-import "./assets/odometer.css";
-import "./assets/animate.min.css";
 import "./assets/bootstrap.min.css";
 import "./assets/style.css";
 
@@ -12,7 +9,6 @@ function App() {
     <>
       <div className="spybody">
         <HomePage />
-     
       </div>
     </>
   );

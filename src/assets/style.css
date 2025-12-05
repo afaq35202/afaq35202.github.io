@@ -15161,6 +15161,7 @@ header.header-full-width.header--sticky.sticky {
 }
 @media only screen and (max-width: 575px) {
   .banner-main-demo-inner-content .absolute-designation .up {
+   
     font-size: 36px;
   }
 }
@@ -20886,9 +20887,15 @@ section.clients-testimonial-area {
     font-size: 44px;
   }
 }
-@media only screen and (max-width: 575px) {
+@media (min-width:431px) and (max-width: 575px) {
   .banner-main-demo-inner-content .absolute-designation .up {
+     top: 58%;
     font-size: 36px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .banner-main-demo-inner-content .absolute-designation .up {
+     top: 45%;
   }
 }
 .banner-main-demo-inner-content .absolute-designation .down {
