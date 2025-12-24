@@ -4,20 +4,15 @@ const Services = ({ myServicesRef }) => {
       icon: "fa-solid fa-mobile-screen",
       title: "Android Development",
       description:
-        "Building high-performance native Android apps using Kotlin, Jetpack Compose, and modern UI/UX principles. Experienced in REST APIs, Firebase, Maps, video processing, and real-time features.",
+        "Building high-performance native Android Apps using Java, Kotlin, and modern UI/UX principles. Experienced in REST APIs, Firebase, Maps, video processing, and real-time features.",
     },
     {
       icon: "fa-brands fa-apple",
-      title: "iOS & Flutter Development",
+      title: "Flutter Development",
       description:
-        "Creating smooth and scalable iOS apps using Flutter. Expertise in cross-platform development, animations, state management, and integrating native modules.",
+        "Flutter developer specializing in scalable cross-platform applications, advanced state management, native integrations, and custom package development—including extending and enhancing existing packages.",
     },
-    {
-      icon: "fa-solid fa-laptop-code",
-      title: "Cross-Platform Apps",
-      description:
-        "Developing efficient cross-platform mobile apps with a single codebase. Ensuring native-like performance, responsive layouts, and seamless API integrations.",
-    },
+    
     {
       icon: "fa-solid fa-server",
       title: "RESTful & GraphQL API Integration",
@@ -58,7 +53,7 @@ const Services = ({ myServicesRef }) => {
       icon: "fa-solid fa-map-location",
       title: "Google Maps & Location Services",
       description:
-        "Building map-based apps with navigation, route drawing, live tracking, geofencing, and location-based services.",
+        "Building map-based apps with navigation, route drawing, live tracking, and location-based services.",
     },
   ];
 

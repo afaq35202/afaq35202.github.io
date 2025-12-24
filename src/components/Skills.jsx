@@ -1,28 +1,24 @@
 const Skkills = ({ mySkillRef }) => {
   const skillsData = [
     {
-      id: 1,
       icon: "fa-mobile-screen-button",
       title: "Mobile Development",
       description:
         "Flutter, Dart, Java, Kotlin, XML, and Jetpack Compose for building fast and scalable mobile applications.",
     },
     {
-      id: 2,
-      icon: "fa-code",
-      title: "Programming Skills",
+      icon: "fa-sitemap",
+      title: "App Release & Distribution",
       description:
-        "Strong foundation in C++, PHP, SQL, HTML, and CSS with hands-on experience in backend and frontend development.",
+        "Skilled in deploying, updating, and maintaining Android and iOS applications across official app distribution platforms.",
     },
     {
-      id: 3,
       icon: "fa-tools",
       title: "Tools & Platforms",
       description:
-        "Experienced with Firebase, REST APIs, MS Office, version control, and development tools for smooth workflows.",
+        "Expertise in OOP, Data Structures, Databases, and Operating Systems, capable of working efficiently across all major platforms including Windows, macOS, and Linux.",
     },
     {
-      id: 4,
       icon: "fa-lightbulb",
       title: "Soft Skills",
       description:
@@ -43,13 +39,13 @@ const Skkills = ({ mySkillRef }) => {
               <div class="my-skill-area-left-content-wrap">
                 <div class="section-head text-align-left">
                   <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1 ">
-                    <span class="subtitle theme-gradient">My Skill</span>
+                    <span class="subtitle theme-gradient">Skill Set</span>
                   </div>
                   <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2 ">
                     Technical Skills & Expertise
                   </h2>
                   <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3 ">
-                    I specialize in mobile application development with strong
+                    Specialized in mobile application development with strong
                     expertise in Flutter, Android, and cross-platform
                     technologies. My skill set includes modern programming
                     languages, UI development, backend integration, and
@@ -58,8 +54,8 @@ const Skkills = ({ mySkillRef }) => {
                   </p>
                   <br />
                   <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">
-                    I am passionate about adopting emerging technologies and
-                    best practices to optimize performance and enhance user
+                    Passionate about adopting emerging technologies and best
+                    practices to optimize performance and enhance user
                     experiences. With strong problem-solving abilities and
                     effective collaboration skills, I create innovative
                     solutions that consistently meet project goals and client
@@ -74,7 +70,7 @@ const Skkills = ({ mySkillRef }) => {
                 {skillsData.map((skill, index) => (
                   <div
                     className="col-lg-6 col-md-6 col-12 paralax-image"
-                    key={skill.id}
+                    key={index}
                   >
                     <div
                       className={`my-skill-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-${

@@ -1,10 +1,9 @@
 import LightShade from "../assets/light.svg";
-import hiImg from "../assets/hi.png";
 import one from "../assets/01.svg";
 import two from "../assets/02.svg";
 import three from "../assets/03.svg";
 import four from "../assets/04.svg";
-import reeniMainDemo from "../assets/profile.png";
+import ProfileImg from "../assets/profile.png";
 const About = () => {
   return (
     <div class="banner-area-one-main-demo tmp-section-gap shape-move" id="home">
@@ -41,13 +40,13 @@ const About = () => {
         <div class="row">
           <div class="col-lg-12">
             <div class="banner-main-demo-inner-content">
-              <span class="top-intro">
+              {/* <span class="top-intro">
                 <img src={hiImg} alt="shape" />
                 &nbsp;My name is Afaq Awan 👨‍💻 a freelancer
-              </span>
+              </span> */}
               <div className="profile-shadow">
                 <img
-                  src={reeniMainDemo}
+                  src={ProfileImg}
                   alt="banner"
                   class="about-us-card tmponhover single-animation active"
                 />
@@ -64,19 +63,13 @@ const About = () => {
                       "translate(-50%, 0%) translate(-7.94px, -1.13px)",
                   }}
                 >
-                  &amp; Flutter Dev
+                  Mobile App Developer
                 </h2>
                 <p class="top-intro">
-                  Experienced Mobile App Developer with a solid track record of
-                  creating cutting-edge, high- performance applications for
-                  Android and IOS platforms. Over three years of hands-on
-                  expertise in developing robust, user-friendly mobile solutions
-                  using native Java, Kotlin, and hybrid Flutter. Proven ability
-                  to deliver scalable and visually appealing applications, while
-                  consistently meeting project deadlines. Adept at collaborating
-                  with cross-functional teams and staying up-to-date with
-                  emerging technologies to drive innovation and optimize user
-                  experiences.
+                  Flutter & Android Mobile App Developer with expertise in Dart,
+                  Java, and Kotlin, specializing in scalable, high-performance
+                  mobile applications, Clean Architecture, and modern state
+                  management.
                 </p>
                 {/* <h2
                   class="down shape"

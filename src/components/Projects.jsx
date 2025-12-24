@@ -1,97 +1,72 @@
-import PortfoliImg2 from "../assets/portfoli-img-1.webp";
+import mp3Converter from "../assets/mp3Converter.webp";
+import Dobby from "../assets/dobbyImg.png";
 import PortfoliImg3 from "../assets/portfoli-img-3.webp";
-import PortfoliImg4 from "../assets/portfoli-img-4.webp";
-import PortfoliImg5 from "../assets/portfoli-img-5.webp";
+import ZoombookImg from "../assets/ZoombookImg.webp";
+import tourguide from "../assets/tourguide.webp";
 import Btg from "../assets/btg-bg.svg";
 import Btg2 from "../assets/btg-bg-2.svg";
 const Projects = ({ myProjectsRef }) => {
   const projectsData = [
     {
+      id: 0,
+      title:
+        "Powering Global Coffee & Vending Brands Through White-Label Mobile Solutions",
+      tags: ["Coffee Industry", "Wide Label Mobile Apps"],
+      image: Dobby,
+      playStoreLink: "",
+      AppStoreLink: "",
+      url: "https://dobby.io/",
+      description:
+        "As part of the Dobby team, I contribute to building and scaling white-label mobile applications that power leading coffee and vending brands like  Selecta, Yellowbeard, Yellowrock, Dankoff, Hillewaert, and Hermelin. Dobby delivers a unified, intelligent platform that replaces manual processes and fragmented systems with automation, real-time service tracking, IoT-ready workflows, and seamless technician management—all customized per brand under a single, scalable architecture.",
+    },
+    {
       id: 1,
+      isCustomStyle: true,
       title: "MP3 Converter - Video to MP3",
-      tags: ["React Native", "Audio"],
-      image: PortfoliImg2,
+      tags: ["Android Native", "Editor"],
+      image: mp3Converter,
       playStoreLink:
         "https://play.google.com/store/apps/details?id=mp3converter.convertvideotomp3.audioconverter",
       AppStoreLink: "",
-      descrptions:
-        "Are you tired of limited audio formats and restrictions on your favorite music? Do you want to convert mp4 to mp3 and enjoy your songs on the device without issues? MP3 video converter is here, which takes your music editor experience to the highest level and is perfect for video to mp3.MP3 converter is more than just a converter. Video to mp3 works as an audio extractor. MP3 cutter is a complete audio transformation toolkit. It allows users to extract MP3 and convert video and audio formats into others like FLAC, WAV, AAC, and many more.",
+      description:
+        "In this project used FFMPEG to perform different operations on audio and video.",
     },
     {
       id: 2,
       title: "Sound Surprise Cam",
-      tags: ["Photo & Video", "Entertainment"],
+      tags: ["Sounds & Video", "Entertainment"],
       image: PortfoliImg3,
       AppStoreLink:
         "https://apps.apple.com/pk/app/sound-surprise-cam/id6470270945",
-      descrptions:
-        "Introducing Sounhttps://extramartapps.blogspot.com/2023/10/privacy-policy.htmld Surprise Cam – the ultimate companion for your video adventures! Capture hilarious moments with your friends as you record videos and add surprise sounds like laughter, airhorns, and more. Elevate the fun quotient and watch your friends' reactions as your videos come to life with unexpected twists. It's the perfect tool for injecting laughter into your memories. Download Sound Surprise Cam now and turn ordinary videos into extraordinary, side-splitting experiences!",
+      description:
+        "In this app, users can record videos by playing prank sounds to capture the reactions of people.",
     },
     {
       id: 3,
       title: "Zoombooks - Expense Tracker",
+      isCustomStyle: true,
       tags: ["Finance", "Productivity"],
-      image: PortfoliImg4,
+      image: ZoombookImg,
       playStoreLink:
         "https://play.google.com/store/apps/details?id=co.technolyte.zoombooks&hl=en&gl=US",
       AppStoreLink: "https://apps.apple.com/pk/app/zoombooks/id1602817407",
-      descrptions:
-        "Zoombooks app is built by accountants for self-employed, sole proprietors and small business owners. It makes expense organizing and bookkeeping simple and easy. Just take photos of the receipts and submit, that's all. Zoombooks receipt scanner will record the receipt, categorize the expense and provide useful income and expense reports.- Save taxes and avoid tax audit by not losing any more receipts.- Track and manage your business expenses better.- and the app is FREE.",
+      description:
+        "This app makes expense organizing and bookkeeping simple and easy. Also receipt scanner will record the receipt, categorize the expense and provide useful income and expense reports.",
     },
 
     {
       id: 5,
       title: "Tour Guide",
+      isCustomStyle: true,
       tags: ["Travel", "Services", "Community"],
-      image: PortfoliImg5,
+      image: tourguide,
       playStoreLink:
         "https://play.google.com/store/apps/details?id=com.technolyte.tourguide&hl=en&gl=US",
       AppStoreLink:
         "https://apps.apple.com/pk/app/tour-guide-pakistan/id1631533463",
 
-      descrptions: `
-TourGuide is a complete travel companion app designed to help you explore destinations beyond ordinary tourist spots. Whether you want to meet locals, discover hidden places, learn new cultures, or plan your trip efficiently — TourGuide brings everything into one platform.
-
-Key Features:
-
-• Tour Guide Services  
-  Find or book local tour guides, or register yourself as one.
-
-• Vehicle Booking  
-  Book vehicles with drivers to enjoy a safe and comfortable journey.
-
-• Room & Accommodation  
-  Users can list rooms or book places to stay.
-
-• Local Business Marketplace  
-  Buy and sell local products with location-based search.
-
-• Short Training Videos  
-  Learn travel tips and safety guidelines through short videos.
-
-• Community Section  
-  Ask questions, share experiences, and interact with other travelers.
-
-• Blog Articles  
-  Stay informed through travel-related blogs and guides.
-
-• Searchable Travel Advisory  
-  Search any city in Pakistan for weather updates and advisory details.
-
-• Training  
-  Access helpful training content for travelers.
-
-• Travel Advisory  
-  Explore cities and get updated information instantly.
-
-• About Pakistan  
-  Learn about all provinces with historical and cultural insights.
-
-• FAQ  
-  A complete FAQ section to guide users about the app services.
-
-TourGuide helps travelers plan, book, explore, and connect — making every trip memorable through smart features and local insights.
-`,
+      description:
+        "In this app tourists can find local people willing to help them discover the most interesting parts. Also Provide the facility of vehicles Users can book a vehicle.",
     },
   ];
   return (
@@ -198,14 +173,22 @@ TourGuide helps travelers plan, book, explore, and connect — making every trip
               tabindex="0"
             >
               <div class="row animation-action-3">
-               
-                {projectsData.map((project) => (
-                  <div class="col-lg-6 col-md-6 paralax-image">
+                {projectsData.map((project, index) => (
+                  <div
+                    key={index}
+                    className={`paralax-image ${
+                      index === 0 ? "col-lg-12 col-md-12" : "col-lg-6 col-md-6"
+                    }`}
+                  >
                     <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-2    ">
                       <div class="portfoli-card-img">
                         <div
                           style={{
                             backgroundColor: "#f5f5f5",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            padding: "3rem",
                           }}
                           class="img-box v2"
                         >
@@ -214,6 +197,14 @@ TourGuide helps travelers plan, book, explore, and connect — making every trip
                             href=""
                           >
                             <img
+                              style={{
+                                height: project?.isCustomStyle
+                                  ? "400px"
+                                  : "auto",
+                                borderRadius: project?.isCustomStyle
+                                  ? "8rem"
+                                  : "0",
+                              }}
                               class="w-100"
                               src={project?.image}
                               alt="Thumbnail"
@@ -223,8 +214,8 @@ TourGuide helps travelers plan, book, explore, and connect — making every trip
                       </div>
                       <div class="portfolio-card-content-wrap">
                         <div class="content-left">
-                          <h3 class="portfolio-card-title">
-                            <a href="">{project?.title}</a>
+                          <h3 class="content-left portfolio-card-title content-left">
+                            <a>{project?.title}</a>
                           </h3>
                           <div class="tag-items">
                             <ul>
@@ -236,6 +227,10 @@ TourGuide helps travelers plan, book, explore, and connect — making every trip
                             </ul>
                           </div>
                         </div>
+                        <p class="description content-left">
+                          {project?.description}
+                        </p>
+
                         <div className="store-buttons">
                           {project?.playStoreLink && (
                             <a
@@ -272,6 +267,25 @@ TourGuide helps travelers plan, book, explore, and connect — making every trip
                                 </span>
                                 <span class="btn-icon">
                                   <i class="fa-brands fa-apple"></i>
+                                </span>
+                              </div>
+                            </a>
+                          )}
+                          {project?.url && (
+                            <a
+                              onClick={() => window.open(project.url)}
+                              class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon btn-md"
+                            >
+                              <div class="icon-reverse-wrapper">
+                                <span class="btn-text">Website</span>
+                                <div class="btn-hack"></div>
+                                <img src={Btg} alt="" class="btn-bg" />
+                                <img src={Btg2} alt="" class="btn-bg-hover" />
+                                <span class="btn-icon">
+                                  <i class="fa-solid fa-globe"></i>
+                                </span>
+                                <span class="btn-icon">
+                                  <i class="fa-solid fa-globe"></i>
                                 </span>
                               </div>
                             </a>

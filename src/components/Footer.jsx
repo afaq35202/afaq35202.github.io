@@ -11,11 +11,9 @@ const Footer = () => {
                 </h3>
                 <p class="description tmp-scroll-trigger tmp-fade-in animation-order-2">
                   I love meeting new people from around the world! Hit me up to
-                  talk about project ideas, Programming, Movies, Neuroscience,
-                  Linux, Kittens and Puppies, Travelling, Books, or Weather. Or
-                  just say "Hi" and we'll find something we enjoy talking about.
-                  You can find me through any of the platforms listed in the
-                  top-right navigation, or via email at{" "}
+                  talk about project ideas, Programming. You can find me through
+                  any of the platforms listed in the top-right navigation, or
+                  via email at{" "}
                   <a href="mailto:afaqawan887@gmail.com">
                     afaqawan887@gmail.com
                   </a>

@@ -6,7 +6,6 @@ const Nav = ({
   onProjectsClick,
 }) => {
   const [showSideNav, setShowSideNav] = React.useState(false);
-  console.log("showSideNav", showSideNav);
   return (
     <>
       <header class="tmp-header-area-start header-one header--sticky header--transparent sticky">
@@ -70,10 +69,13 @@ const Nav = ({
                 <div class="tmp-header-right">
                   <div class="social-share-wrapper d-none d-md-block">
                     <div class="social-link">
-                      <a href="linkedin.com/in/afaq-awan-162b10215">
+                      <a
+                        target="_blank"
+                        href="https://linkedin.com/in/afaq-awan-162b10215"
+                      >
                         <i class="fa-brands fa-linkedin-in"></i>
                       </a>
-                      <a href="https://github.com/afaq35202">
+                      <a target="_blank" href="https://github.com/afaq35202">
                         <i class="fa-brands fa-github"></i>
                       </a>
                       <a
@@ -84,23 +86,16 @@ const Nav = ({
                         <i class="fa-brands fa-whatsapp"></i>
                       </a>
 
+                      <a href="mailto:afaqawan35202@gmail.com" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                      </a>
                       <a
-                        href="mailto:afaqawan35202@gmail.com"
+                        href="https://www.youtube.com/@easycodingtricks"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i class="fa-regular fa-envelope"></i>
+                        <i class="fa-brands fa-youtube"></i>
                       </a>
-                      {/* <a href="https://inversweb.com/product/html/virtuo/index.html#">
-                        <i class="fa-brands fa-twitter"></i>
-                      </a>
-                      <a href="https://inversweb.com/product/html/virtuo/index.html#">
-                        <i class="fa-brands fa-facebook-f"></i>
-                      </a> */}
-
-                      {/* <a href="https://inversweb.com/product/html/virtuo/index.html#">
-                        <i class="fa-brands fa-instagram"></i>
-                      </a> */}
                     </div>
                   </div>
 
@@ -234,6 +229,13 @@ const Nav = ({
                   rel="noopener noreferrer"
                 >
                   <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/@easycodingtricks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-youtube"></i>
                 </a>
                 {/* <a href="https://inversweb.com/product/html/virtuo/index.html#">
                         <i class="fa-brands fa-twitter"></i>

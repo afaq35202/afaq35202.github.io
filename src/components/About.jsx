@@ -33,64 +33,25 @@ const About = ({ myAboutRef }) => {
                       with Mobile Solutions
                     </h2>
                     <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">
-                      I’m a dedicated mobile application developer specializing
-                      in Android, iOS, and cross-platform solutions. With
-                      hands-on experience in Flutter, Jetpack Compose,
-                      REST/GraphQL APIs, Firebase, real-time communication,
-                      video streaming, and secure payment integrations, I build
-                      applications that are fast, scalable, and user-centric. I
-                      focus on writing clean code, delivering smooth
-                      performance, and turning ideas into meaningful digital
-                      products.
+                      Results-driven Mobile Application Developer with strong
+                      expertise in Flutter and Native Android development (Java
+                      & Kotlin). I specialize in building high-performance,
+                      scalable, and user-centric mobile applications for Android
+                      and cross-platform environments. I focus on writing clean,
+                      maintainable, and testable code while ensuring smooth user
+                      experiences and optimal performance.
                     </p>
-                  </div>
-                  <div class="about-us-section-card row g-5">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                      <div class="about-us-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
-                        <div class="card-head with-flex">
-                          <div class="logo-img">
-                            <img src={BusinessImg} alt="logo" />
-                          </div>
-                          <h3 class="card-title">Mobile Development</h3>
-                        </div>
-                        <p class="card-para">
-                          Native Android, iOS & Flutter expertise.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                      <div class="about-us-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-5">
-                        <div class="card-head with-flex">
-                          <div class="logo-img">
-                            <img src={PartnerImg} alt="logo" />
-                          </div>
-                          <h3 class="card-title">Real-Time Solutions</h3>
-                        </div>
-                        <p class="card-para">
-                          Video, voice, chat, and live streaming features.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6 ">
-                    <a
-                      class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon"
-                      href=""
-                    >
-                      <div class="icon-reverse-wrapper">
-                        <span class="btn-text">Read More About Me</span>
-                        <div class="btn-hack"></div>
-                        <img src={Btg} alt="" class="btn-bg" />
-                        <img src={Btg2} alt="" class="btn-bg-hover" />
-                        <span class="btn-icon">
-                          <i class="fa-solid fa-arrow-down"></i>
-                        </span>
-                        <span class="btn-icon">
-                          <i class="fa-solid fa-arrow-down"></i>
-                        </span>
-                      </div>
-                    </a>
+                    <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">
+                      Worked on large-scale production apps, including
+                      role-based systems, white-label applications, eCommerce
+                      platforms, and Firebase-powered solutions. As a developer,
+                      I value code quality, performance optimization, and
+                      scalable system design. I collaborate effectively with
+                      cross-functional teams and translate business requirements
+                      into robust mobile solutions. I am passionate about
+                      continuous learning and staying updated with the latest
+                      mobile technologies and best practices.
+                    </p>
                   </div>
                 </div>
               </div>
