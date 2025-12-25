@@ -1,8 +1,3 @@
-import reeniMainDemo from "../assets/profile.png";
-import BusinessImg from "../assets/logo-1.svg";
-import PartnerImg from "../assets/logo-2.svg";
-import Btg from "../assets/btg-bg.svg";
-import Btg2 from "../assets/btg-bg-2.svg";
 const About = ({ myAboutRef }) => {
   return (
     <section
@@ -14,14 +9,6 @@ const About = ({ myAboutRef }) => {
         <section class="about-us-area">
           <div class="container">
             <div class="row align-items-center animation-action-3">
-              {/* <div class="col-lg-6 pr--50 pr_lg--10 pr_md--10 pr_sm--10">
-                <div class="about-us-left-content-wrap paralax-image">
-                  <div class="about-thumbnail-large-style-two about-us-card tmponhover single-animation active">
-                    <img src={reeniMainDemo} alt="about" />
-                    <div class="tmp-light light-center"></div>
-                  </div>
-                </div>
-              </div> */}
               <div class="col-lg-12">
                 <div class="about-us-right-content-wrap">
                   <div class="section-head text-align-left mb--50">

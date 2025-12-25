@@ -6,6 +6,12 @@
 .profile-shadow img {
   display: block;
   z-index: 2;
+  height: 600px;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .profile-shadow img {
+    height: 400px;
+  }
 }
 
 .profile-shadow::after {
@@ -41,7 +47,7 @@
 
 @media (min-width: 992px) {
   .custom-margin-lg {
-    margin: 0 130px;
+    margin: 0 65px;
   }
 }
 

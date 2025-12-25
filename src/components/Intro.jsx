@@ -3,7 +3,7 @@ import one from "../assets/01.svg";
 import two from "../assets/02.svg";
 import three from "../assets/03.svg";
 import four from "../assets/04.svg";
-import ProfileImg from "../assets/profile.png";
+import ProfileImg from "../assets/profile.webp";
 const About = () => {
   return (
     <div class="banner-area-one-main-demo tmp-section-gap shape-move" id="home">
@@ -19,12 +19,7 @@ const About = () => {
           alt="Top Light Shape"
         />
       </div>
-      <div
-        style={{
-          zIndex: 1,
-        }}
-        class="slider-bg-dot-shape"
-      >
+      <div class="slider-bg-dot-shape">
         <div
           style={{
             width: "650px",
@@ -40,15 +35,13 @@ const About = () => {
         <div class="row">
           <div class="col-lg-12">
             <div class="banner-main-demo-inner-content">
-              {/* <span class="top-intro">
-                <img src={hiImg} alt="shape" />
-                &nbsp;My name is Afaq Awan 👨‍💻 a freelancer
-              </span> */}
               <div className="profile-shadow">
                 <img
+                  loading="lazy"
                   src={ProfileImg}
                   alt="banner"
-                  class="about-us-card tmponhover single-animation active"
+                  decoding="async"
+                  class="about-us-card tmponhover  active"
                 />
               </div>
 

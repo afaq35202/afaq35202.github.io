@@ -29,7 +29,7 @@ const Skkills = ({ mySkillRef }) => {
   return (
     <section
       ref={mySkillRef}
-      class="my-skill-area-style-two plr--120 plr_lg--30 plr_md--30 plr_sm--30 plr_mobile--15 mt--10"
+      class="my-skill-area-style-two plr_lg--30 plr_md--30 plr_sm--30 plr_mobile--15 mt--10"
       id="resume"
     >
       <div class="tpm-custom-box-bg position-relative overflow-hidden border--radious-20 custom-margin-lg">

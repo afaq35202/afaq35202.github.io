@@ -15151,7 +15151,7 @@ header.header-full-width.header--sticky.sticky {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .banner-main-demo-inner-content .absolute-designation .up {
-    font-size: 77px;
+    font-size: 62px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -20862,7 +20862,7 @@ section.clients-testimonial-area {
   font-weight: 700;
 }
 .banner-main-demo-inner-content .absolute-designation .up {
-  top: 65%;
+  top: 70%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 110px;
@@ -20875,7 +20875,7 @@ section.clients-testimonial-area {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .banner-main-demo-inner-content .absolute-designation .up {
-    font-size: 77px;
+    font-size: 62px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -27879,8 +27879,8 @@ body.white-version .card-greeting p {
 }
 .banner-area-one-main-demo .slider-bg-dot-shape {
   position: absolute;
-  left: 32%;
-  z-index: -1;
+  left: 25%;
+  z-index: 1;
 }
 
 .blocksync-stars-area {
