@@ -6,7 +6,10 @@ import four from "../assets/04.svg";
 import ProfileImg from "../assets/profile.webp";
 const About = () => {
   return (
-    <div className="banner-area-one-main-demo tmp-section-gap shape-move" id="home">
+    <div
+      className="banner-area-one-main-demo tmp-section-gap shape-move"
+      id="home"
+    >
       <div
         style={{
           zIndex: 1,
@@ -42,6 +45,8 @@ const About = () => {
                   alt="banner"
                   decoding="async"
                   className="about-us-card tmponhover  active"
+                  width="476"
+                  height="600"
                 />
               </div>
 

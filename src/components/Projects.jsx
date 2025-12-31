@@ -221,7 +221,9 @@ const Projects = ({ myProjectsRef }) => {
                             <ul>
                               {project?.tags.map((tag, index) => (
                                 <li key={index}>
-                                  <a className="tag-item">{tag}</a>
+                                  <a aria-label={tag} className="tag-item">
+                                    {tag}
+                                  </a>
                                 </li>
                               ))}
                             </ul>
@@ -241,7 +243,11 @@ const Projects = ({ myProjectsRef }) => {
                                 <span className="btn-text">Google Play</span>
                                 <div className="btn-hack"></div>
                                 <img src={Btg} alt="" className="btn-bg" />
-                                <img src={Btg2} alt="" className="btn-bg-hover" />
+                                <img
+                                  src={Btg2}
+                                  alt=""
+                                  className="btn-bg-hover"
+                                />
                                 <span className="btn-icon">
                                   <i className="fa-brands fa-google-play"></i>
                                 </span>
@@ -261,7 +267,11 @@ const Projects = ({ myProjectsRef }) => {
                                 <span className="btn-text">App Store</span>
                                 <div className="btn-hack"></div>
                                 <img src={Btg} alt="" className="btn-bg" />
-                                <img src={Btg2} alt="" className="btn-bg-hover" />
+                                <img
+                                  src={Btg2}
+                                  alt=""
+                                  className="btn-bg-hover"
+                                />
                                 <span className="btn-icon">
                                   <i className="fa-brands fa-apple"></i>
                                 </span>
@@ -280,7 +290,11 @@ const Projects = ({ myProjectsRef }) => {
                                 <span className="btn-text">Website</span>
                                 <div className="btn-hack"></div>
                                 <img src={Btg} alt="" className="btn-bg" />
-                                <img src={Btg2} alt="" className="btn-bg-hover" />
+                                <img
+                                  src={Btg2}
+                                  alt=""
+                                  className="btn-bg-hover"
+                                />
                                 <span className="btn-icon">
                                   <i className="fa-solid fa-globe"></i>
                                 </span>

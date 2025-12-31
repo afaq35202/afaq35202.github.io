@@ -75,10 +75,15 @@ const Nav = ({
                       >
                         <i className="fa-brands fa-linkedin-in"></i>
                       </a>
-                      <a target="_blank" href="https://github.com/afaq35202">
+                      <a
+                        aria-label="GitHub profile"
+                        target="_blank"
+                        href="https://github.com/afaq35202"
+                      >
                         <i className="fa-brands fa-github"></i>
                       </a>
                       <a
+                        aria-label="whatsapp profile"
                         href="https://wa.me/923224022942"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -86,10 +91,16 @@ const Nav = ({
                         <i className="fa-brands fa-whatsapp"></i>
                       </a>
 
-                      <a href="mailto:afaqawan35202@gmail.com" target="_blank">
+                      <a
+                        aria-label="email profile"
+                        href="mailto:afaqawan35202@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <i className="fa-regular fa-envelope"></i>
                       </a>
                       <a
+                        aria-label="YouTube profile"
                         href="https://www.youtube.com/@easycodingtricks"
                         target="_blank"
                         rel="noopener noreferrer"

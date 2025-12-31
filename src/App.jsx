@@ -6,11 +6,9 @@ import "./assets/style.css";
 import HomePage from "./pages/index.jsx";
 function App() {
   return (
-    <>
-      <div className="spybody">
-        <HomePage />
-      </div>
-    </>
+    <main className="spybody">
+      <HomePage />
+    </main>
   );
 }
 
