@@ -72,29 +72,29 @@ const Projects = ({ myProjectsRef }) => {
   return (
     <section
       ref={myProjectsRef}
-      class="latest-portfolio-area custom-column-grid tmp-section-gap"
+      className="latest-portfolio-area custom-column-grid tmp-section-gap"
       id="portfolio"
     >
-      <div class="container">
-        <div class="section-head mb--60">
-          <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1    ">
-            <span class="subtitle theme-gradient">Latest Projects</span>
+      <div className="container">
+        <div className="section-head mb--60">
+          <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1    ">
+            <span className="subtitle theme-gradient">Latest Projects</span>
           </div>
-          <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2    ">
+          <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2    ">
             Transforming Ideas into Exceptional
           </h2>
-          <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3    ">
+          <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3    ">
             Business consulting consultants provide expert advice and guida
             businesses to help them improve their performance, efficiency, and
             organizational
           </p>
         </div>
-        <div class="latest-portfolio-tabs-area">
+        <div className="latest-portfolio-tabs-area">
           {/* <nav>
-                <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                <ul className="nav nav-tabs" id="nav-tab" role="tablist">
                   <li>
                     <button
-                      class="nav-link active"
+                      className="nav-link active"
                       id="nav-all-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-all"
@@ -108,7 +108,7 @@ const Projects = ({ myProjectsRef }) => {
                   </li>
                   <li>
                     <button
-                      class="nav-link"
+                      className="nav-link"
                       id="nav-branding-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-branding"
@@ -122,7 +122,7 @@ const Projects = ({ myProjectsRef }) => {
                   </li>
                   <li>
                     <button
-                      class="nav-link"
+                      className="nav-link"
                       id="nav-design-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-design"
@@ -136,7 +136,7 @@ const Projects = ({ myProjectsRef }) => {
                   </li>
                   <li>
                     <button
-                      class="nav-link"
+                      className="nav-link"
                       id="nav-content-writing-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-content-writing"
@@ -150,7 +150,7 @@ const Projects = ({ myProjectsRef }) => {
                   </li>
                   <li>
                     <button
-                      class="nav-link"
+                      className="nav-link"
                       id="nav-marketing-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-marketing"
@@ -164,15 +164,15 @@ const Projects = ({ myProjectsRef }) => {
                   </li>
                 </ul>
               </nav> */}
-          <div class="tab-content bg-blur-style-one" id="nav-tabContent">
+          <div className="tab-content bg-blur-style-one" id="nav-tabContent">
             <div
-              class="tab-pane fade show active"
+              className="tab-pane fade show active"
               id="nav-all"
               role="tabpanel"
               aria-labelledby="nav-all-tab"
               tabindex="0"
             >
-              <div class="row animation-action-3">
+              <div className="row animation-action-3">
                 {projectsData.map((project, index) => (
                   <div
                     key={index}
@@ -180,8 +180,8 @@ const Projects = ({ myProjectsRef }) => {
                       index === 0 ? "col-lg-12 col-md-12" : "col-lg-6 col-md-6"
                     }`}
                   >
-                    <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-2    ">
-                      <div class="portfoli-card-img">
+                    <div className="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-2    ">
+                      <div className="portfoli-card-img">
                         <div
                           style={{
                             backgroundColor: "#f5f5f5",
@@ -190,10 +190,10 @@ const Projects = ({ myProjectsRef }) => {
                             alignItems: "center",
                             padding: "3rem",
                           }}
-                          class="img-box v2"
+                          className="img-box v2"
                         >
                           <a
-                            class="tmp-scroll-trigger tmp-zoom-in animation-order-1    "
+                            className="tmp-scroll-trigger tmp-zoom-in animation-order-1    "
                             href=""
                           >
                             <img
@@ -205,29 +205,29 @@ const Projects = ({ myProjectsRef }) => {
                                   ? "8rem"
                                   : "0",
                               }}
-                              class="w-100"
+                              className="w-100"
                               src={project?.image}
                               alt="Thumbnail"
                             />
                           </a>
                         </div>
                       </div>
-                      <div class="portfolio-card-content-wrap">
-                        <div class="content-left">
-                          <h3 class="content-left portfolio-card-title content-left">
+                      <div className="portfolio-card-content-wrap">
+                        <div className="content-left">
+                          <h3 className="content-left portfolio-card-title content-left">
                             <a>{project?.title}</a>
                           </h3>
-                          <div class="tag-items">
+                          <div className="tag-items">
                             <ul>
                               {project?.tags.map((tag, index) => (
                                 <li key={index}>
-                                  <a class="tag-item">{tag}</a>
+                                  <a className="tag-item">{tag}</a>
                                 </li>
                               ))}
                             </ul>
                           </div>
                         </div>
-                        <p class="description content-left">
+                        <p className="description content-left">
                           {project?.description}
                         </p>
 
@@ -235,18 +235,18 @@ const Projects = ({ myProjectsRef }) => {
                           {project?.playStoreLink && (
                             <a
                               onClick={() => window.open(project.playStoreLink)}
-                              class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon btn-md"
+                              className="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon btn-md"
                             >
-                              <div class="icon-reverse-wrapper">
-                                <span class="btn-text">Google Play</span>
-                                <div class="btn-hack"></div>
-                                <img src={Btg} alt="" class="btn-bg" />
-                                <img src={Btg2} alt="" class="btn-bg-hover" />
-                                <span class="btn-icon">
-                                  <i class="fa-brands fa-google-play"></i>
+                              <div className="icon-reverse-wrapper">
+                                <span className="btn-text">Google Play</span>
+                                <div className="btn-hack"></div>
+                                <img src={Btg} alt="" className="btn-bg" />
+                                <img src={Btg2} alt="" className="btn-bg-hover" />
+                                <span className="btn-icon">
+                                  <i className="fa-brands fa-google-play"></i>
                                 </span>
-                                <span class="btn-icon">
-                                  <i class="fa-brands fa-google-play"></i>
+                                <span className="btn-icon">
+                                  <i className="fa-brands fa-google-play"></i>
                                 </span>
                               </div>
                             </a>
@@ -255,18 +255,18 @@ const Projects = ({ myProjectsRef }) => {
                           {project?.AppStoreLink && (
                             <a
                               onClick={() => window.open(project.AppStoreLink)}
-                              class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon btn-md"
+                              className="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon btn-md"
                             >
-                              <div class="icon-reverse-wrapper">
-                                <span class="btn-text">App Store</span>
-                                <div class="btn-hack"></div>
-                                <img src={Btg} alt="" class="btn-bg" />
-                                <img src={Btg2} alt="" class="btn-bg-hover" />
-                                <span class="btn-icon">
-                                  <i class="fa-brands fa-apple"></i>
+                              <div className="icon-reverse-wrapper">
+                                <span className="btn-text">App Store</span>
+                                <div className="btn-hack"></div>
+                                <img src={Btg} alt="" className="btn-bg" />
+                                <img src={Btg2} alt="" className="btn-bg-hover" />
+                                <span className="btn-icon">
+                                  <i className="fa-brands fa-apple"></i>
                                 </span>
-                                <span class="btn-icon">
-                                  <i class="fa-brands fa-apple"></i>
+                                <span className="btn-icon">
+                                  <i className="fa-brands fa-apple"></i>
                                 </span>
                               </div>
                             </a>
@@ -274,25 +274,25 @@ const Projects = ({ myProjectsRef }) => {
                           {project?.url && (
                             <a
                               onClick={() => window.open(project.url)}
-                              class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon btn-md"
+                              className="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon btn-md"
                             >
-                              <div class="icon-reverse-wrapper">
-                                <span class="btn-text">Website</span>
-                                <div class="btn-hack"></div>
-                                <img src={Btg} alt="" class="btn-bg" />
-                                <img src={Btg2} alt="" class="btn-bg-hover" />
-                                <span class="btn-icon">
-                                  <i class="fa-solid fa-globe"></i>
+                              <div className="icon-reverse-wrapper">
+                                <span className="btn-text">Website</span>
+                                <div className="btn-hack"></div>
+                                <img src={Btg} alt="" className="btn-bg" />
+                                <img src={Btg2} alt="" className="btn-bg-hover" />
+                                <span className="btn-icon">
+                                  <i className="fa-solid fa-globe"></i>
                                 </span>
-                                <span class="btn-icon">
-                                  <i class="fa-solid fa-globe"></i>
+                                <span className="btn-icon">
+                                  <i className="fa-solid fa-globe"></i>
                                 </span>
                               </div>
                             </a>
                           )}
                         </div>
                       </div>
-                      <div class="tmp-light light-center"></div>
+                      <div className="tmp-light light-center"></div>
                     </div>
                   </div>
                 ))}

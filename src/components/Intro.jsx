@@ -6,48 +6,48 @@ import four from "../assets/04.svg";
 import ProfileImg from "../assets/profile.webp";
 const About = () => {
   return (
-    <div class="banner-area-one-main-demo tmp-section-gap shape-move" id="home">
+    <div className="banner-area-one-main-demo tmp-section-gap shape-move" id="home">
       <div
         style={{
           zIndex: 1,
         }}
-        class="slider-bg-light"
+        className="slider-bg-light"
       >
         <img
-          class="blocksync-scroll-trigger fade_in animation-order-8"
+          className="blocksync-scroll-trigger fade_in animation-order-8"
           src={LightShade}
           alt="Top Light Shape"
         />
       </div>
-      <div class="slider-bg-dot-shape">
+      <div className="slider-bg-dot-shape">
         <div
           style={{
             width: "650px",
           }}
-          class="wrapper blocksync-scroll-trigger blocksync-stars-area fade_in animation-order-16"
+          className="wrapper blocksync-scroll-trigger blocksync-stars-area fade_in animation-order-16"
         >
-          <div class="blocksync-stars"></div>
-          <div class="blocksync-stars2"></div>
-          <div class="blocksync-stars3"></div>
+          <div className="blocksync-stars"></div>
+          <div className="blocksync-stars2"></div>
+          <div className="blocksync-stars3"></div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="banner-main-demo-inner-content">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="banner-main-demo-inner-content">
               <div className="profile-shadow">
                 <img
                   loading="lazy"
                   src={ProfileImg}
                   alt="banner"
                   decoding="async"
-                  class="about-us-card tmponhover  active"
+                  className="about-us-card tmponhover  active"
                 />
               </div>
 
-              <div class="absolute-designation shape-image">
+              <div className="absolute-designation shape-image">
                 <h2
-                  class="up shape"
+                  className="up shape"
                   style={{
                     translate: "none",
                     rotate: "none",
@@ -58,14 +58,14 @@ const About = () => {
                 >
                   Mobile App Developer
                 </h2>
-                <p class="top-intro">
+                <p className="top-intro">
                   Flutter & Android Mobile App Developer with expertise in Dart,
                   Java, and Kotlin, specializing in scalable, high-performance
                   mobile applications, Clean Architecture, and modern state
                   management.
                 </p>
                 {/* <h2
-                  class="down shape"
+                  className="down shape"
                   data-speed="0.02"
                   style={{
                     zIndex: 1,
@@ -82,25 +82,25 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div class="tmp-banner-circle">
-        <img class="tmp-banner-circle-1" src={one} alt="circle-image" />
-        <img class="tmp-banner-circle-2" src={two} alt="circle-image" />
-        <img class="tmp-banner-circle-3" src={three} alt="circle-image" />
-        <img class="tmp-banner-circle-4" src={four} alt="circle-image" />
+      <div className="tmp-banner-circle">
+        <img className="tmp-banner-circle-1" src={one} alt="circle-image" />
+        <img className="tmp-banner-circle-2" src={two} alt="circle-image" />
+        <img className="tmp-banner-circle-3" src={three} alt="circle-image" />
+        <img className="tmp-banner-circle-4" src={four} alt="circle-image" />
       </div>
-      <div class="separator-animated-border border-top-footer animated-true"></div>
-      <div class="slider-bg-light">
+      <div className="separator-animated-border border-top-footer animated-true"></div>
+      <div className="slider-bg-light">
         <img
-          class="blocksync-scroll-trigger fade_in animation-order-8"
+          className="blocksync-scroll-trigger fade_in animation-order-8"
           src="./Home 01 - Virtuo Personal Portfolio HTML Template_files/light.svg"
           alt="Top Light Shape"
         />
       </div>
-      <div class="slider-bg-dot-shape">
-        <div class="wrapper blocksync-scroll-trigger blocksync-stars-area fade_in animation-order-16">
-          <div class="blocksync-stars"></div>
-          <div class="blocksync-stars2"></div>
-          <div class="blocksync-stars3"></div>
+      <div className="slider-bg-dot-shape">
+        <div className="wrapper blocksync-scroll-trigger blocksync-stars-area fade_in animation-order-16">
+          <div className="blocksync-stars"></div>
+          <div className="blocksync-stars2"></div>
+          <div className="blocksync-stars3"></div>
         </div>
       </div>
     </div>

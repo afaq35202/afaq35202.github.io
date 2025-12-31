@@ -2,24 +2,24 @@ const About = ({ myAboutRef }) => {
   return (
     <section
       ref={myAboutRef}
-      class="about-us-area tmp-section-gapBottom"
+      className="about-us-area tmp-section-gapBottom"
       id="about"
     >
-      <div class="container">
-        <section class="about-us-area">
-          <div class="container">
-            <div class="row align-items-center animation-action-3">
-              <div class="col-lg-12">
-                <div class="about-us-right-content-wrap">
-                  <div class="section-head text-align-left mb--50">
-                    <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                      <span class="subtitle theme-gradient">About Me</span>
+      <div className="container">
+        <section className="about-us-area">
+          <div className="container">
+            <div className="row align-items-center animation-action-3">
+              <div className="col-lg-12">
+                <div className="about-us-right-content-wrap">
+                  <div className="section-head text-align-left mb--50">
+                    <div className="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                      <span className="subtitle theme-gradient">About Me</span>
                     </div>
-                    <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
+                    <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
                       Boost Business Strategic <br />
                       with Mobile Solutions
                     </h2>
-                    <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">
+                    <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
                       Results-driven Mobile Application Developer with strong
                       expertise in Flutter and Native Android development (Java
                       & Kotlin). I specialize in building high-performance,
@@ -28,7 +28,7 @@ const About = ({ myAboutRef }) => {
                       maintainable, and testable code while ensuring smooth user
                       experiences and optimal performance.
                     </p>
-                    <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">
+                    <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
                       Worked on large-scale production apps, including
                       role-based systems, white-label applications, eCommerce
                       platforms, and Firebase-powered solutions. As a developer,

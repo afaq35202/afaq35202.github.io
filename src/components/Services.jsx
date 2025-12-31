@@ -60,37 +60,37 @@ const Services = ({ myServicesRef }) => {
   return (
     <div
       ref={myServicesRef}
-      class="tmp-service-area tmp-section-gapBottom"
+      className="tmp-service-area tmp-section-gapBottom"
       id="service"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-head mb--50">
-              <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                <span class="subtitle theme-gradient">Worked On</span>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="section-head mb--50">
+              <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                <span className="subtitle theme-gradient">Worked On</span>
               </div>
-              <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
+              <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
                 Technologies & Services I Work With
               </h2>
             </div>
           </div>
         </div>
-        <div class="about-us-section-card row g-5 animation-action-2">
+        <div className="about-us-section-card row g-5 animation-action-2">
           {servicesData.map((service, index) => (
             <div
               key={index}
-              class="col-lg-6 col-md-6 col-sm-6 col-12 paralax-image"
+              className="col-lg-6 col-md-6 col-sm-6 col-12 paralax-image"
             >
-              <div class="about-us-card tmp-scroll-trigger tmponhover single-animation tmp-fade-in">
-                <div class="card-head">
-                  <div class="logo-img">
+              <div className="about-us-card tmp-scroll-trigger tmponhover single-animation tmp-fade-in">
+                <div className="card-head">
+                  <div className="logo-img">
                     <i class={service.icon}></i>
                   </div>
-                  <h3 class="card-title">{service.title}</h3>
+                  <h3 className="card-title">{service.title}</h3>
                 </div>
-                <p class="card-para">{service.description}</p>
-                <div class="tmp-light light-center"></div>
+                <p className="card-para">{service.description}</p>
+                <div className="tmp-light light-center"></div>
               </div>
             </div>
           ))}

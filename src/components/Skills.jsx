@@ -29,22 +29,22 @@ const Skkills = ({ mySkillRef }) => {
   return (
     <section
       ref={mySkillRef}
-      class="my-skill-area-style-two plr_lg--30 plr_md--30 plr_sm--30 plr_mobile--15 mt--10"
+      className="my-skill-area-style-two plr_lg--30 plr_md--30 plr_sm--30 plr_mobile--15 mt--10"
       id="resume"
     >
-      <div class="tpm-custom-box-bg position-relative overflow-hidden border--radious-20 custom-margin-lg">
-        <div class="container">
-          <div class="row">
-            <div class="col-xxl-6 col-lg-12 col-md-12">
-              <div class="my-skill-area-left-content-wrap">
-                <div class="section-head text-align-left">
-                  <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1 ">
-                    <span class="subtitle theme-gradient">Skill Set</span>
+      <div className="tpm-custom-box-bg position-relative overflow-hidden border--radious-20 custom-margin-lg">
+        <div className="container">
+          <div className="row">
+            <div className="col-xxl-6 col-lg-12 col-md-12">
+              <div className="my-skill-area-left-content-wrap">
+                <div className="section-head text-align-left">
+                  <div className="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1 ">
+                    <span className="subtitle theme-gradient">Skill Set</span>
                   </div>
-                  <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2 ">
+                  <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2 ">
                     Technical Skills & Expertise
                   </h2>
-                  <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3 ">
+                  <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3 ">
                     Specialized in mobile application development with strong
                     expertise in Flutter, Android, and cross-platform
                     technologies. My skill set includes modern programming
@@ -53,7 +53,7 @@ const Skkills = ({ mySkillRef }) => {
                     high-quality mobile solutions.
                   </p>
                   <br />
-                  <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">
+                  <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
                     Passionate about adopting emerging technologies and best
                     practices to optimize performance and enhance user
                     experiences. With strong problem-solving abilities and
@@ -65,7 +65,7 @@ const Skkills = ({ mySkillRef }) => {
               </div>
             </div>
 
-            <div class="col-xxl-6 col-lg-12 col-md-12">
+            <div className="col-xxl-6 col-lg-12 col-md-12">
               <div className="my-skill-card-style-two row">
                 {skillsData.map((skill, index) => (
                   <div
@@ -93,7 +93,7 @@ const Skkills = ({ mySkillRef }) => {
             </div>
           </div>
         </div>
-        <div class="tmp-light light-top-left active"></div>
+        <div className="tmp-light light-top-left active"></div>
       </div>
     </section>
   );
