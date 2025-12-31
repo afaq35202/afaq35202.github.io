@@ -20891,13 +20891,14 @@ section.clients-testimonial-area {
 }
 @media (min-width: 431px) and (max-width: 575px) {
   .banner-main-demo-inner-content .absolute-designation .up {
-    top: 58%;
+    top: 65%;
     font-size: 36px;
   }
 }
 @media only screen and (max-width: 430px) {
   .banner-main-demo-inner-content .absolute-designation .up {
-    top: 45%;
+    top: 65%;
+    font-size: 27px;
   }
 }
 .banner-main-demo-inner-content .absolute-designation .down {
