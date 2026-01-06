@@ -3,7 +3,6 @@ import Nav from "../components/Nav";
 import Services from "../components/Services";
 import Intro from "../components/Intro";
 import About from "../components/About";
-import Counter from "../components/Counter";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
@@ -30,7 +29,6 @@ const HomePage = () => {
       <About myAboutRef={myAboutRef} />
       <Skills mySkillRef={mySkillRef} />
       <Projects myProjectsRef={myProjectsRef} />
-      
       <Footer />
     </div>
   );

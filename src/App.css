@@ -56,3 +56,36 @@
   gap: 12px;
   flex-wrap: wrap;
 }
+
+.project-img--custom {
+  height: 220px;
+  border-radius: 8rem !important;
+}
+
+/* md screens (≥768px) */
+@media (min-width: 768px) {
+  .project-img--custom {
+    height: 260px;
+  }
+}
+
+/* lg screens (≥992px) */
+@media (min-width: 992px) {
+  .project-img--custom {
+    height: 300px;
+  }
+}
+
+/* xl screens (≥1200px) */
+@media (min-width: 1200px) {
+  .project-img--custom {
+    height: 320px;
+  }
+}
+
+/* xxl screens (≥1400px) */
+@media (min-width: 1400px) {
+  .project-img--custom {
+    height: 350px;
+  }
+}

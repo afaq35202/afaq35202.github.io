@@ -90,80 +90,6 @@ const Projects = ({ myProjectsRef }) => {
           </p>
         </div>
         <div className="latest-portfolio-tabs-area">
-          {/* <nav>
-                <ul className="nav nav-tabs" id="nav-tab" role="tablist">
-                  <li>
-                    <button
-                      className="nav-link active"
-                      id="nav-all-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#nav-all"
-                      type="button"
-                      role="tab"
-                      aria-controls="nav-all"
-                      aria-selected="true"
-                    >
-                      All
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      className="nav-link"
-                      id="nav-branding-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#nav-branding"
-                      type="button"
-                      role="tab"
-                      aria-controls="nav-branding"
-                      aria-selected="false"
-                    >
-                      Branding
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      className="nav-link"
-                      id="nav-design-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#nav-design"
-                      type="button"
-                      role="tab"
-                      aria-controls="nav-design"
-                      aria-selected="false"
-                    >
-                      Design
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      className="nav-link"
-                      id="nav-content-writing-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#nav-content-writing"
-                      type="button"
-                      role="tab"
-                      aria-controls="nav-content-writing"
-                      aria-selected="false"
-                    >
-                      Content writing
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      className="nav-link"
-                      id="nav-marketing-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#nav-marketing"
-                      type="button"
-                      role="tab"
-                      aria-controls="nav-marketing"
-                      aria-selected="false"
-                    >
-                      Marketing
-                    </button>
-                  </li>
-                </ul>
-              </nav> */}
           <div className="tab-content bg-blur-style-one" id="nav-tabContent">
             <div
               className="tab-pane fade show active"
@@ -177,7 +103,7 @@ const Projects = ({ myProjectsRef }) => {
                   <div
                     key={index}
                     className={`paralax-image ${
-                      index === 0 ? "col-lg-12 col-md-12" : "col-lg-6 col-md-6"
+                      index === 0 ? "col-lg-12 col-md-12 " : "col-lg-6 col-md-6"
                     }`}
                   >
                     <div className="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-2    ">
@@ -197,15 +123,11 @@ const Projects = ({ myProjectsRef }) => {
                             href=""
                           >
                             <img
-                              style={{
-                                height: project?.isCustomStyle
-                                  ? "400px"
-                                  : "auto",
-                                borderRadius: project?.isCustomStyle
-                                  ? "8rem"
-                                  : "0",
-                              }}
-                              className="w-100"
+                              className={`w-100 project-img ${
+                                project?.isCustomStyle
+                                  ? "project-img--custom"
+                                  : ""
+                              }`}
                               src={project?.image}
                               alt="Thumbnail"
                             />

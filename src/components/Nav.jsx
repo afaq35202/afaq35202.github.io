@@ -78,17 +78,9 @@ const Nav = ({
                       <a
                         aria-label="GitHub profile"
                         target="_blank"
-                        href="https://github.com/afaq35202"
+                        href="https://github.com/afaq3522"
                       >
                         <i className="fa-brands fa-github"></i>
-                      </a>
-                      <a
-                        aria-label="whatsapp profile"
-                        href="https://wa.me/923224022942"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <i className="fa-brands fa-whatsapp"></i>
                       </a>
 
                       <a
@@ -98,6 +90,14 @@ const Nav = ({
                         rel="noopener noreferrer"
                       >
                         <i className="fa-regular fa-envelope"></i>
+                      </a>
+                      <a
+                        aria-label="stack-overflow "
+                        href="https://stackoverflow.com/users/17430914/afaq-awan"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fa-brands fa-stack-overflow"></i>
                       </a>
                       <a
                         aria-label="YouTube profile"
@@ -220,15 +220,19 @@ const Nav = ({
                 }}
                 className="social-link"
               >
-                <a href="https://linkedin.com/in/afaq-awan-162b10215">
+                <a
+                  target="_blank"
+                  href="https://linkedin.com/in/afaq-awan-162b10215"
+                >
                   <i className="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/afaq35202">
+                <a target="_blank" href="https://github.com/afaq3522">
                   <i className="fa-brands fa-github"></i>
                 </a>
+
                 <a
-                  href="https://wa.me/923224022942"
                   target="_blank"
+                  href="https://wa.me/923224022942"
                   rel="noopener noreferrer"
                 >
                   <i className="fa-brands fa-whatsapp"></i>
@@ -242,22 +246,20 @@ const Nav = ({
                   <i className="fa-regular fa-envelope"></i>
                 </a>
                 <a
+                  aria-label="stack-overflow "
+                  href="https://stackoverflow.com/users/17430914/afaq-awan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa-brands fa-stack-overflow"></i>
+                </a>
+                <a
                   href="https://www.youtube.com/@easycodingtricks"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="fa-brands fa-youtube"></i>
                 </a>
-                {/* <a href="https://inversweb.com/product/html/virtuo/index.html#">
-                        <i className="fa-brands fa-twitter"></i>
-                      </a>
-                      <a href="https://inversweb.com/product/html/virtuo/index.html#">
-                        <i className="fa-brands fa-facebook-f"></i>
-                      </a> */}
-
-                {/* <a href="https://inversweb.com/product/html/virtuo/index.html#">
-                        <i className="fa-brands fa-instagram"></i>
-                      </a> */}
               </div>
             </div>
           </div>
