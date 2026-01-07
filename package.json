@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://afaq35202.github.io",
+  "description": "Portfolio website for Mobile App Developer showcasing skills, projects, and expertise.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
