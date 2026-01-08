@@ -12,7 +12,7 @@ const Services = ({ myServicesRef }) => {
       description:
         "Flutter developer specializing in scalable cross-platform applications, advanced state management, native integrations, and custom package development—including extending and enhancing existing packages.",
     },
-    
+
     {
       icon: "fa-solid fa-server",
       title: "RESTful & GraphQL API Integration",
@@ -80,7 +80,7 @@ const Services = ({ myServicesRef }) => {
           {servicesData.map((service, index) => (
             <div
               key={index}
-              className="col-lg-6 col-md-6 col-sm-6 col-12 paralax-image"
+              className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-12 paralax-image"
             >
               <div className="about-us-card tmp-scroll-trigger tmponhover single-animation tmp-fade-in">
                 <div className="card-head">

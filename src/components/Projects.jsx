@@ -8,7 +8,6 @@ import Btg2 from "../assets/btg-bg-2.svg";
 const Projects = ({ myProjectsRef }) => {
   const projectsData = [
     {
-      id: 0,
       title:
         "Powering Global Coffee & Vending Brands Through White-Label Mobile Solutions",
       tags: ["Coffee Industry", "Wide Label Mobile Apps"],
@@ -20,7 +19,6 @@ const Projects = ({ myProjectsRef }) => {
         "As part of the Dobby team, I contribute to building and scaling white-label mobile applications that power leading coffee and vending brands like  Selecta, Yellowbeard, Yellowrock, Dankoff, Hillewaert, and Hermelin. Dobby delivers a unified, intelligent platform that replaces manual processes and fragmented systems with automation, real-time service tracking, IoT-ready workflows, and seamless technician management—all customized per brand under a single, scalable architecture.",
     },
     {
-      id: 1,
       isCustomStyle: true,
       title: "MP3 Converter - Video to MP3",
       tags: ["Android Native", "Editor"],
@@ -32,7 +30,6 @@ const Projects = ({ myProjectsRef }) => {
         "In this project used FFMPEG to perform different operations on audio and video.",
     },
     {
-      id: 2,
       title: "Sound Surprise Cam",
       tags: ["Sounds & Video", "Entertainment"],
       image: PortfoliImg3,
@@ -42,7 +39,6 @@ const Projects = ({ myProjectsRef }) => {
         "In this app, users can record videos by playing prank sounds to capture the reactions of people.",
     },
     {
-      id: 3,
       title: "Zoombooks - Expense Tracker",
       isCustomStyle: true,
       tags: ["Finance", "Productivity"],
@@ -55,7 +51,6 @@ const Projects = ({ myProjectsRef }) => {
     },
 
     {
-      id: 5,
       title: "Tour Guide",
       isCustomStyle: true,
       tags: ["Travel", "Services", "Community"],
@@ -102,8 +97,8 @@ const Projects = ({ myProjectsRef }) => {
                 {projectsData.map((project, index) => (
                   <div
                     key={index}
-                    className={`paralax-image ${
-                      index === 0 ? "col-lg-12 col-md-12 " : "col-lg-6 col-md-6"
+                    className={`paralax-image col-md-12 col-sm-12 col-12 ${
+                      index === 0 ? "col-lg-12 col-xxl-4 " : "col-lg-6 md-12 sm-12 col-xxl-4"
                     }`}
                   >
                     <div className="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-2    ">
@@ -115,6 +110,7 @@ const Projects = ({ myProjectsRef }) => {
                             justifyContent: "center",
                             alignItems: "center",
                             padding: "3rem",
+                            borderRadius: "8px",
                           }}
                           className="img-box v2"
                         >
@@ -123,7 +119,7 @@ const Projects = ({ myProjectsRef }) => {
                             href=""
                           >
                             <img
-                              className={`w-100 project-img ${
+                              className={` project-img ${
                                 project?.isCustomStyle
                                   ? "project-img--custom"
                                   : ""
