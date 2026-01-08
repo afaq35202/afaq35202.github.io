@@ -15141,7 +15141,7 @@ header.header-full-width.header--sticky.sticky {
   top: 65%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 110px;
+  font-size: 65px;
   z-index: 3;
 }
 @media only screen and (min-width: 1600px) and (max-width: 1919px) {
@@ -20863,17 +20863,13 @@ section.clients-testimonial-area {
   top: 70%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 110px;
+  font-size: 65px;
   z-index: 3;
 }
-@media only screen and (min-width: 1600px) and (max-width: 1919px) {
-  .banner-main-demo-inner-content .absolute-designation .up {
-    font-size: 60px;
-  }
-}
+
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .banner-main-demo-inner-content .absolute-designation .up {
-    font-size: 62px;
+    font-size: 50px;
   }
 }
 @media only screen and (max-width: 1199px) {
