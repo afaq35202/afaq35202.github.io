@@ -79,12 +79,13 @@ const Projects = ({ myProjectsRef }) => {
     }, [description]);
 
     return (
-      <p
-        ref={descRef}
-        className={`description content-left ${expanded ? "expanded" : ""}`}
-      >
-        {description}
-        <br />
+      <>
+        <p
+          ref={descRef}
+          className={`description content-left ${expanded ? "expanded" : ""}`}
+        >
+          {description}
+        </p>
         {showMore && (
           <span
             className="read-more-inline"
@@ -93,7 +94,7 @@ const Projects = ({ myProjectsRef }) => {
             {expanded ? " Read less" : " Read more"}
           </span>
         )}
-      </p>
+      </>
     );
   }
 
@@ -180,9 +181,7 @@ const Projects = ({ myProjectsRef }) => {
                             </ul>
                           </div>
                         </div>
-                        {/* <p className="description content-left">
-                          {project?.description}
-                        </p> */}
+
                         <ProjectDescription
                           description={project?.description}
                         />

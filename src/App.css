@@ -95,7 +95,6 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  padding-right: 5.5rem;
 }
 
 .description.expanded {
@@ -104,9 +103,11 @@
 }
 
 .read-more-inline {
+  font-size: 12px;
+  cursor: pointer;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 75px;
+  left: 0;
   color: #075498;
   cursor: pointer;
 }
