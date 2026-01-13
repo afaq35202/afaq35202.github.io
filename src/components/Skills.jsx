@@ -35,7 +35,7 @@ const Skkills = ({ mySkillRef }) => {
       <div className="tpm-custom-box-bg position-relative overflow-hidden border--radious-20 custom-margin-lg">
         <div className="container">
           <div className="row">
-            <div className="col-xxl-6 col-lg-12 col-md-12">
+            <div className="col-xxl-12 col-lg-12 col-md-12">
               <div className="my-skill-area-left-content-wrap">
                 <div className="section-head text-align-left">
                   <div className="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1 ">
@@ -65,7 +65,7 @@ const Skkills = ({ mySkillRef }) => {
               </div>
             </div>
 
-            <div className="col-xxl-6 col-lg-12 col-md-12">
+            <div className="col-xxl-12 col-lg-12 col-md-12">
               <div className="my-skill-card-style-two row">
                 {skillsData.map((skill, index) => (
                   <div

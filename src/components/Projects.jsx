@@ -1,3 +1,4 @@
+import React, { useEffect, useRef, useState } from "react";
 import mp3Converter from "../assets/mp3Converter.webp";
 import Dobby from "../assets/dobbyImg.png";
 import PortfoliImg3 from "../assets/portfoli-img-3.webp";
@@ -5,65 +6,97 @@ import ZoombookImg from "../assets/ZoombookImg.webp";
 import tourguide from "../assets/tourguide.webp";
 import Btg from "../assets/btg-bg.svg";
 import Btg2 from "../assets/btg-bg-2.svg";
+const projectsData = [
+  {
+    title:
+      "Powering Global Coffee & Vending Brands Through White-Label Mobile Solutions",
+    tags: ["Coffee Industry", "Wide Label Mobile Apps"],
+    image: Dobby,
+    playStoreLink: "",
+    AppStoreLink: "",
+    url: "https://dobby.io/",
+    description:
+      "As part of the Dobby team, I contribute to building and scaling white-label mobile applications that power leading coffee and vending brands like  Selecta, Yellowbeard, Yellowrock, Dankoff, Hillewaert, and Hermelin. Dobby delivers a unified, intelligent platform that replaces manual processes and fragmented systems with automation, real-time service tracking, IoT-ready workflows, and seamless technician management—all customized per brand under a single, scalable architecture.",
+  },
+  {
+    isCustomStyle: true,
+    title: "MP3 Converter - Video to MP3",
+    tags: ["Android Native", "Editor"],
+    image: mp3Converter,
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=mp3converter.convertvideotomp3.audioconverter",
+    AppStoreLink: "",
+    description:
+      "In this project used FFMPEG to perform different operations on audio and video.",
+  },
+  {
+    title: "Sound Surprise Cam",
+    tags: ["Sounds & Video", "Entertainment"],
+    image: PortfoliImg3,
+    AppStoreLink:
+      "https://apps.apple.com/pk/app/sound-surprise-cam/id6470270945",
+    description:
+      "In this app, users can record videos by playing prank sounds to capture the reactions of people.",
+  },
+  {
+    title: "Zoombooks - Expense Tracker",
+    isCustomStyle: true,
+    tags: ["Finance", "Productivity"],
+    image: ZoombookImg,
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=co.technolyte.zoombooks&hl=en&gl=US",
+    AppStoreLink: "https://apps.apple.com/pk/app/zoombooks/id1602817407",
+    description:
+      "This app makes expense organizing and bookkeeping simple and easy. Also receipt scanner will record the receipt, categorize the expense and provide useful income and expense reports.",
+  },
+
+  {
+    title: "Tour Guide",
+    isCustomStyle: true,
+    tags: ["Travel", "Services", "Community"],
+    image: tourguide,
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.technolyte.tourguide&hl=en&gl=US",
+    AppStoreLink:
+      "https://apps.apple.com/pk/app/tour-guide-pakistan/id1631533463",
+
+    description:
+      "In this app tourists can find local people willing to help them discover the most interesting parts. Also Provide the facility of vehicles Users can book a vehicle.",
+  },
+];
 const Projects = ({ myProjectsRef }) => {
-  const projectsData = [
-    {
-      title:
-        "Powering Global Coffee & Vending Brands Through White-Label Mobile Solutions",
-      tags: ["Coffee Industry", "Wide Label Mobile Apps"],
-      image: Dobby,
-      playStoreLink: "",
-      AppStoreLink: "",
-      url: "https://dobby.io/",
-      description:
-        "As part of the Dobby team, I contribute to building and scaling white-label mobile applications that power leading coffee and vending brands like  Selecta, Yellowbeard, Yellowrock, Dankoff, Hillewaert, and Hermelin. Dobby delivers a unified, intelligent platform that replaces manual processes and fragmented systems with automation, real-time service tracking, IoT-ready workflows, and seamless technician management—all customized per brand under a single, scalable architecture.",
-    },
-    {
-      isCustomStyle: true,
-      title: "MP3 Converter - Video to MP3",
-      tags: ["Android Native", "Editor"],
-      image: mp3Converter,
-      playStoreLink:
-        "https://play.google.com/store/apps/details?id=mp3converter.convertvideotomp3.audioconverter",
-      AppStoreLink: "",
-      description:
-        "In this project used FFMPEG to perform different operations on audio and video.",
-    },
-    {
-      title: "Sound Surprise Cam",
-      tags: ["Sounds & Video", "Entertainment"],
-      image: PortfoliImg3,
-      AppStoreLink:
-        "https://apps.apple.com/pk/app/sound-surprise-cam/id6470270945",
-      description:
-        "In this app, users can record videos by playing prank sounds to capture the reactions of people.",
-    },
-    {
-      title: "Zoombooks - Expense Tracker",
-      isCustomStyle: true,
-      tags: ["Finance", "Productivity"],
-      image: ZoombookImg,
-      playStoreLink:
-        "https://play.google.com/store/apps/details?id=co.technolyte.zoombooks&hl=en&gl=US",
-      AppStoreLink: "https://apps.apple.com/pk/app/zoombooks/id1602817407",
-      description:
-        "This app makes expense organizing and bookkeeping simple and easy. Also receipt scanner will record the receipt, categorize the expense and provide useful income and expense reports.",
-    },
+  function ProjectDescription({ description }) {
+    const descRef = useRef(null);
+    const [expanded, setExpanded] = useState(false);
+    const [showMore, setShowMore] = useState(false);
 
-    {
-      title: "Tour Guide",
-      isCustomStyle: true,
-      tags: ["Travel", "Services", "Community"],
-      image: tourguide,
-      playStoreLink:
-        "https://play.google.com/store/apps/details?id=com.technolyte.tourguide&hl=en&gl=US",
-      AppStoreLink:
-        "https://apps.apple.com/pk/app/tour-guide-pakistan/id1631533463",
+    useEffect(() => {
+      if (descRef.current) {
+        setShowMore(
+          descRef.current.scrollHeight > descRef.current.clientHeight
+        );
+      }
+    }, [description]);
 
-      description:
-        "In this app tourists can find local people willing to help them discover the most interesting parts. Also Provide the facility of vehicles Users can book a vehicle.",
-    },
-  ];
+    return (
+      <p
+        ref={descRef}
+        className={`description content-left ${expanded ? "expanded" : ""}`}
+      >
+        {description}
+        <br />
+        {showMore && (
+          <span
+            className="read-more-inline"
+            onClick={() => setExpanded((p) => !p)}
+          >
+            {expanded ? " Read less" : " Read more"}
+          </span>
+        )}
+      </p>
+    );
+  }
+
   return (
     <section
       ref={myProjectsRef}
@@ -97,9 +130,9 @@ const Projects = ({ myProjectsRef }) => {
                 {projectsData.map((project, index) => (
                   <div
                     key={index}
-                    className={`paralax-image col-md-12 col-sm-12 col-12 ${
-                      index === 0 ? "col-lg-12 col-xxl-4 " : "col-lg-6 md-12 sm-12 col-xxl-4"
-                    }`}
+                    className="paralax-image  col-12 
+                      
+                         col-lg-6 col-md-12 col-sm-12 col-xxl-4"
                   >
                     <div className="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-2    ">
                       <div className="portfoli-card-img">
@@ -147,9 +180,12 @@ const Projects = ({ myProjectsRef }) => {
                             </ul>
                           </div>
                         </div>
-                        <p className="description content-left">
+                        {/* <p className="description content-left">
                           {project?.description}
-                        </p>
+                        </p> */}
+                        <ProjectDescription
+                          description={project?.description}
+                        />
 
                         <div className="store-buttons">
                           {project?.playStoreLink && (

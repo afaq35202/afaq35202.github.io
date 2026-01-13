@@ -89,3 +89,24 @@
     height: 250px;
   }
 }
+.description {
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-right: 5.5rem;
+}
+
+.description.expanded {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.read-more-inline {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #075498;
+  cursor: pointer;
+}
