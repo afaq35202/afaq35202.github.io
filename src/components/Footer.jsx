@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div className="tmp-footer-area footer-style-4 tmp-section-gapTop pb--50">
-      <div className="plr--150 plr_lg--30 plr_md--30 plr_sm--30 plr_mobile--15">
-        <div className="row margin-lg-only">
+    <footer className="container tmp-footer-area footer-style-4 tmp-section-gapTop pb--50">
+      <div className="  plr_lg--30 plr_md--30 plr_sm--30 plr_mobile--15 ">
+        <div className="row ">
           <div className="col-lg-12">
             <div className="for-animation-inner">
               <div className="footer-area text-center">
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 export default Footer;

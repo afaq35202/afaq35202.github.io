@@ -45,12 +45,6 @@
   margin: 0;
 }
 
-@media (min-width: 992px) {
-  .custom-margin-lg {
-    margin: 0 65px;
-  }
-}
-
 .store-buttons {
   display: flex;
   gap: 12px;
