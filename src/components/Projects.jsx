@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import mp3Converter from "../assets/mp3Converter.webp";
 import Dobby from "../assets/dobbyImg.png";
+import GameImage from "../assets/fungame.webp";
 import PortfoliImg3 from "../assets/portfoli-img-3.webp";
 import ZoombookImg from "../assets/ZoombookImg.webp";
 import tourguide from "../assets/tourguide.webp";
@@ -19,15 +20,15 @@ const projectsData = [
       "As part of the Dobby team, I contribute to building and scaling white-label mobile applications that power leading coffee and vending brands like  Selecta, Yellowbeard, Yellowrock, Dankoff, Hillewaert, and Hermelin. Dobby delivers a unified, intelligent platform that replaces manual processes and fragmented systems with automation, real-time service tracking, IoT-ready workflows, and seamless technician management—all customized per brand under a single, scalable architecture.",
   },
   {
+    title: "Instant Money: Fun & Rewards",
     isCustomStyle: true,
-    title: "MP3 Converter - Video to MP3",
-    tags: ["Android Native", "Editor"],
-    image: mp3Converter,
+    tags: ["Entertainment", "Rewards", "Gaming"],
+    image: GameImage,
     playStoreLink:
-      "https://play.google.com/store/apps/details?id=mp3converter.convertvideotomp3.audioconverter",
+      "https://play.google.com/store/apps/details?id=com.instant.earnmoney.getmoney",
     AppStoreLink: "",
     description:
-      "In this project used FFMPEG to perform different operations on audio and video.",
+      "Instant Money is a gamified rewards and earning mobile application built using Flutter, Provider, Firebase, AdMob, and Firebase Realtime Database. The app allows users to earn coins by completing task-based activities such as playing games, watching rewarded videos, and engaging with interactive content. It features a real-time coin tracking system, a structured rewards mechanism, and a smooth payout redemption workflow that ensures fast and reliable withdrawals. Firebase services were used for authentication, real-time data synchronization, and secure reward management, while AdMob integration enabled monetized video rewards. The application was optimized for performance, scalability, and user engagement, delivering a responsive and rewarding user experience.",
   },
   {
     title: "Sound Surprise Cam",
@@ -37,6 +38,19 @@ const projectsData = [
       "https://apps.apple.com/pk/app/sound-surprise-cam/id6470270945",
     description:
       "In this app, users can record videos by playing prank sounds to capture the reactions of people.",
+  },
+  {
+    title: "Tour Guide",
+    isCustomStyle: true,
+    tags: ["Travel", "Services", "Community"],
+    image: tourguide,
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.technolyte.tourguide&hl=en&gl=US",
+    AppStoreLink:
+      "https://apps.apple.com/pk/app/tour-guide-pakistan/id1631533463",
+
+    description:
+      "In this app tourists can find local people willing to help them discover the most interesting parts. Also Provide the facility of vehicles Users can book a vehicle.",
   },
   {
     title: "Zoombooks - Expense Tracker",
@@ -51,17 +65,15 @@ const projectsData = [
   },
 
   {
-    title: "Tour Guide",
     isCustomStyle: true,
-    tags: ["Travel", "Services", "Community"],
-    image: tourguide,
+    title: "MP3 Converter - Video to MP3",
+    tags: ["Android Native", "Editor"],
+    image: mp3Converter,
     playStoreLink:
-      "https://play.google.com/store/apps/details?id=com.technolyte.tourguide&hl=en&gl=US",
-    AppStoreLink:
-      "https://apps.apple.com/pk/app/tour-guide-pakistan/id1631533463",
-
+      "https://play.google.com/store/apps/details?id=mp3converter.convertvideotomp3.audioconverter",
+    AppStoreLink: "",
     description:
-      "In this app tourists can find local people willing to help them discover the most interesting parts. Also Provide the facility of vehicles Users can book a vehicle.",
+      "In this project used FFMPEG to perform different operations on audio and video.",
   },
 ];
 const Projects = ({ myProjectsRef }) => {
@@ -73,7 +85,7 @@ const Projects = ({ myProjectsRef }) => {
     useEffect(() => {
       if (descRef.current) {
         setShowMore(
-          descRef.current.scrollHeight > descRef.current.clientHeight
+          descRef.current.scrollHeight > descRef.current.clientHeight,
         );
       }
     }, [description]);

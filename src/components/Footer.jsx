@@ -9,7 +9,7 @@ const Footer = () => {
                 <h3 className="footer-title tmp-scroll-trigger tmp-fade-in animation-order-1">
                   Let's Get in Touch!
                 </h3>
-                <p className="description tmp-scroll-trigger tmp-fade-in animation-order-2">
+                <p className=" tmp-scroll-trigger tmp-fade-in animation-order-2">
                   I love meeting new people from around the world! Hit me up to
                   talk about project ideas, Programming. You can find me through
                   any of the platforms listed in the top-right navigation, or
@@ -21,8 +21,7 @@ const Footer = () => {
                 </p>
 
                 <p className="description mt--30">
-                  ©<script>document.write(new Date().getFullYear());</script>{" "}
-                  2025. All rights reserved .
+                  © {new Date().getFullYear()}. All rights reserved.
                 </p>
               </div>
             </div>
