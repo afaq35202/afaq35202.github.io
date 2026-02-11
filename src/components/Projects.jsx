@@ -28,7 +28,7 @@ const projectsData = [
       "https://play.google.com/store/apps/details?id=com.instant.earnmoney.getmoney",
     AppStoreLink: "",
     description:
-      "Instant Money is a gamified rewards and earning mobile application built using Flutter, Provider, Firebase, AdMob, and Firebase Realtime Database. The app allows users to earn coins by completing task-based activities such as playing games, watching rewarded videos, and engaging with interactive content. It features a real-time coin tracking system, a structured rewards mechanism, and a smooth payout redemption workflow that ensures fast and reliable withdrawals. Firebase services were used for authentication, real-time data synchronization, and secure reward management, while AdMob integration enabled monetized video rewards. The application was optimized for performance, scalability, and user engagement, delivering a responsive and rewarding user experience.",
+      "Instant Money is a gamified rewards app that lets users earn coins through tasks and rewarded videos, featuring real-time earnings tracking and a fast, seamless payout redemption experience.",
   },
   {
     title: "Sound Surprise Cam",
