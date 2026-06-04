@@ -30,6 +30,7 @@ const projectsData = [
     description:
       "Instant Money is a gamified rewards app that lets users earn coins through tasks and rewarded videos, featuring real-time earnings tracking and a fast, seamless payout redemption experience.",
   },
+  
   {
     title: "Sound Surprise Cam",
     tags: ["Sounds & Video", "Entertainment"],
